@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Apoio Pedagógico — Lição 05 — ENTREGANDO DÍZIMOS E OFERTAS | EBD Fiel</title>
+<style>
+    :root {
+      --verde-escuro: #145b4c;
+      --verde: #198367;
+      --verde-claro: #dff4e9;
+      --menta: #edf9f2;
+      --fundo: #f3f8f5;
+      --texto: #20352e;
+      --borda: #cde5d8;
+      --branco: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--fundo); color: var(--texto); font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .pagina { width: min(100% - 32px, 930px); margin: 28px auto 44px; }
+    .licao-betel { background: var(--branco); border: 1px solid var(--borda); border-radius: 22px; overflow: hidden; box-shadow: 0 14px 38px rgba(18, 67, 49, .09); }
+    .banner { padding: 0; background: transparent; border-bottom: 4px solid var(--verde); text-align: center; }
+    .banner img { display: block; width: 100%; max-width: 100%; height: auto; max-height: none; object-fit: contain; margin: 0 auto; }
+    .banner .identidade { margin: 0; color: var(--verde-escuro); font-size: .93rem; font-weight: 700; letter-spacing: .055em; text-transform: uppercase; }
+    .banner .classe { margin: 4px 0 0; font-size: .96rem; }
+    .conteudo { padding: 32px 40px 0; }
+    .titulo-licao { margin: 0 0 24px; color: var(--verde-escuro); font-size: clamp(1.75rem, 4vw, 2.4rem); line-height: 1.2; text-align: center; }
+    .bloco, .topico { margin: 0 0 21px; padding: 20px 23px; border: 1px solid var(--borda); border-radius: 16px; background: var(--branco); break-inside: avoid-page; }
+    .campos-originais { background: var(--menta); border-left: 5px solid var(--verde); }
+    .campos-originais p { margin: 0 0 12px; }
+    .campos-originais p:last-child, .bloco p:last-child, .topico p:last-child { margin-bottom: 0; }
+    p { margin: 0 0 13px; }
+    strong { color: var(--verde-escuro); }
+    h2 { margin: 0 0 13px; color: var(--verde-escuro); font-size: 1.09rem; line-height: 1.35; }
+    h3 { margin: 0 0 10px; color: var(--verde-escuro); font-size: 1rem; line-height: 1.35; }
+    .perguntas-abertura { background: #f5fbf7; }
+    .perguntas { display: grid; gap: 10px; }
+    .pergunta { padding: 11px 14px; background: var(--branco); border: 1px solid var(--borda); border-radius: 10px; }
+    .topico { border-left: 5px solid var(--verde); }
+    .apoio-pedagogico { background: #e7f6ef; border-color: #b7decc; }
+    .aplicacao-pratica { background: #f7fcf9; border-left: 5px solid #6aa88c; }
+    .sintese { background: #e6f4ec; border-left: 5px solid var(--verde-escuro); }
+    .caca-palavras-section { margin-bottom: 22px; background: #f5faf7; border-style: dashed; }
+
+    .caca-wrapper { display: grid; gap: 18px; align-items: start; }
+    .caca-orientacao { margin-bottom: 4px; }
+    .caca-grade { overflow-x: auto; }
+    .caca-grade table { width: 100%; max-width: 100%; border-collapse: collapse; table-layout: fixed; background: #fff; }
+    .caca-grade td { width: 7.69%; aspect-ratio: 1 / 1; border: 1px solid #b7d5c4; text-align: center; vertical-align: middle; font-family: "Courier New", monospace; font-size: 1rem; font-weight: 700; color: var(--verde-escuro); padding: 0; }
+    .lista-palavras { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+    .lista-palavras li { margin: 0 0 6px; font-weight: 600; }
+    .observacao-caca { font-size: .92rem; color: #46665b; }
+    .barra-acoes-rodape { display: flex; justify-content: center; padding: 0 0 34px; }
+    .barra-acoes-rodape button { cursor: pointer; border: 0; border-radius: 12px; padding: 13px 24px; color: white; background: var(--verde-escuro); font: inherit; font-weight: 700; }
+    .barra-acoes-rodape button:hover, .barra-acoes-rodape button:focus-visible { background: #0d493b; }
+    .barra-acoes-rodape button:focus-visible { outline: 3px solid #80bfa0; outline-offset: 3px; }
+    @media (max-width: 600px) {
+      .pagina { width: 100%; margin: 0; }
+      .licao-betel { border-radius: 0; box-shadow: none; }
+      .banner { padding: 0; }
+      .conteudo { padding: 22px 14px 0; }
+      .bloco, .topico { padding: 17px 15px; border-radius: 12px; }
+      .titulo-licao { margin-bottom: 20px; }
+      .barra-acoes-rodape { padding: 0 14px 25px; }
+      .barra-acoes-rodape button { width: 100%; }
+
+      .caca-grade td { font-size: .88rem; }
+      .lista-palavras { columns: 1; }
+    }
+    @page { size: A4; margin: 14mm; }
+    @media print {
+      html, body { background: #fff !important; color: #111; font-size: 10.5pt; line-height: 1.45; }
+      .pagina { width: 100%; margin: 0; }
+      .licao-betel { border: 0; border-radius: 0; box-shadow: none; }
+      .banner { padding: 0; border-bottom: 0; margin-bottom: 4mm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .banner img { display: block; width: 100%; max-width: 100%; height: auto; max-height: 32mm; object-fit: contain; }
+      .conteudo { padding: 5mm 0 0; }
+      .titulo-licao { font-size: 20pt; }
+      .bloco, .topico { margin-bottom: 4mm; padding: 4mm; border-radius: 3mm; break-inside: avoid-page; }
+
+      .caca-grade td { font-size: 10.5pt; }
+      .lista-palavras { columns: 2; }
+      .barra-acoes-rodape { display: none !important; }
+    }
+  
+
+    .capa-oficial { margin: 0 0 22px; }
+    .capa-oficial img { display:block; width:100%; height:auto; object-fit:contain; border:1px solid var(--borda); border-radius:15px; }
+    @media print {
+      .capa-oficial { break-inside: avoid-page; margin-bottom: 4mm; }
+      .capa-oficial img { max-width:100%; max-height:87mm; object-fit:contain; border-radius:2mm; }
+    }
+
+
+/* Repositório independente: navegação e apresentação em página única. */
+body{background:var(--fundo)}
+/* Banner oficial: arte inteira em até 1180 px; fundo acompanha as cores das extremidades. */
+.site-banner{background:linear-gradient(90deg, #8c52fe 0%, #8c52fe calc(50% - 590px), #ff914d calc(50% + 590px), #ff914d 100%);border-bottom:4px solid var(--verde);line-height:0;text-align:center}
+.site-banner img{display:block;width:100%;max-width:1180px;height:auto;margin:0 auto;object-fit:contain}
+.site-banner .mobile-banner-label{display:none;margin:0;padding:8px 12px;background:var(--menta);color:var(--verde-escuro);font-size:.82rem;line-height:1.4;font-weight:700;letter-spacing:.01em}
+@media(max-width:600px){.site-banner .mobile-banner-label{display:block}}
+.skip-link{position:absolute;top:-100px;left:10px;z-index:99;background:white;padding:12px}.skip-link:focus{top:8px}
+.site-layout{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(220px,275px) minmax(0,1fr);align-items:start;gap:20px;padding:24px clamp(12px,2vw,32px) 42px}
+.sidebar{position:sticky;top:12px;border:1px solid var(--borda);border-radius:17px;background:#fff;padding:18px;box-shadow:0 7px 24px #124a3612;max-height:calc(100vh - 24px);overflow-y:auto}
+.sidebar h2{font-size:1.08rem;margin:0 0 6px}.sidebar p{font-size:.85rem;line-height:1.45;color:#49685c}
+.sidebar ol{padding:0;margin:15px 0 0;list-style:none}.sidebar li{margin:4px 0}.sidebar a{display:block;color:var(--texto);text-decoration:none;padding:9px 11px;border-radius:9px;font-size:.91rem;line-height:1.35}
+.sidebar a:hover,.sidebar a:focus-visible{background:var(--menta)}.sidebar a.active{background:#d5eee1;color:var(--verde-escuro);font-weight:750}
+.workarea{min-width:0}.toolbar{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;border:1px solid var(--borda);border-radius:16px;background:#fff;padding:15px;margin-bottom:16px}
+.toolbar label{grid-column:1/-1;font-weight:700;color:var(--verde-escuro);font-size:.92rem}.toolbar input{min-width:0;width:100%;font:inherit;padding:10px 12px;border:1px solid #9dc7af;border-radius:9px;background:#fff}
+.toolbar button,.search-hit{font:inherit;cursor:pointer;border:0;border-radius:9px;background:var(--verde-escuro);color:#fff;padding:10px 14px;font-weight:650}.toolbar button.secondary{background:#e8f4ed;color:var(--verde-escuro)}
+#search-status{grid-column:1/-1;min-height:1.4em;color:#547366;font-size:.83rem;line-height:1.45}
+.search-results:not(:empty){display:grid;gap:7px;background:#fff;border:1px solid var(--borda);padding:12px;border-radius:14px;margin-bottom:15px}
+.search-hit{background:#f1faf5;color:var(--verde-escuro);text-align:left;border:1px solid var(--borda);font-weight:650}.search-hit:hover{background:#d9eee3}
+.mobile-picker{display:none}.mobile-picker select{width:100%;font:inherit;padding:10px;border:1px solid var(--borda);border-radius:9px;background:#fff}
+.lesson-holder[hidden]{display:none!important}.lesson-holder{min-width:0}.lesson-holder .licao-betel{width:100%;margin:0;border-radius:18px}
+.lesson-holder .banner{display:none} /* Sitewide banner is visible once; per-article banner is print-only. */
+.lesson-holder .capa-oficial{margin:0 0 22px}.lesson-holder .capa-oficial img{display:block;width:100%;height:auto;object-fit:contain;border:1px solid var(--borda);border-radius:14px}
+.lesson-holder .conteudo{padding:clamp(18px,3.5vw,36px) clamp(16px,4vw,40px) 0}
+.lesson-holder .caca-wrapper{min-width:0}.lesson-holder .caca-grade td{font-size:clamp(.59rem,1.6vw,.96rem);cursor:pointer;user-select:none}
+.lesson-holder .caca-grade td.puzzle-start{background:#dff1e7;outline:2px solid #267658;outline-offset:-2px}
+.lesson-holder .caca-grade td.found{background:#d5ecdf;color:#0d543e}.lesson-holder .lista-palavras li.found{text-decoration:line-through;color:#477967}
+.caca-instrucao{font-size:.9rem;color:#46665b}.caca-status{font-size:.88rem;font-weight:700;color:#2b6d4b}
+.site-nav{display:flex;gap:7px;align-items:center;justify-content:space-between;margin:0 0 15px}.site-nav button{font:inherit;background:#e3f2e9;color:#145b4c;border:1px solid var(--borda);border-radius:9px;padding:9px 13px;cursor:pointer}.site-nav button:disabled{opacity:.4;cursor:default}
+#current-indicator{color:#426d5b;font-size:.84rem;font-weight:700}
+:focus-visible{outline:3px solid #1c836b;outline-offset:2px}
+@media(max-width:850px){.site-layout{display:block;padding:12px 12px 30px}.sidebar{display:none}.mobile-picker{display:block;margin-bottom:12px}.site-nav{margin-bottom:12px}}
+@media(max-width:600px){.site-layout{padding:0 0 20px}.workarea{padding:12px}.toolbar{grid-template-columns:1fr 1fr;padding:12px}.toolbar input{grid-column:1/-1}.toolbar label{grid-column:1/-1}.toolbar button{width:100%}.lesson-holder .licao-betel{border-radius:14px}.lesson-holder .caca-grade td{font-size:clamp(.55rem,2.4vw,.77rem)}.lesson-holder .lista-palavras{columns:2}.lesson-holder .conteudo{padding:18px 12px 0}.mobile-picker{margin-bottom:12px}.search-results:not(:empty){margin-bottom:12px}}
+@page{size:A4;margin:13mm}
+@media print{
+ html,body{background:#fff!important;font-size:10.5pt;line-height:1.45}
+ .skip-link,.site-banner,.site-layout>.sidebar,.mobile-picker,.toolbar,.search-results,.site-nav{display:none!important}
+ .site-layout{display:block;max-width:none;margin:0;padding:0}.workarea{width:100%}
+ .lesson-holder{display:none!important}.lesson-holder.active{display:block!important}
+ .lesson-holder .licao-betel{border:0;border-radius:0;box-shadow:none;overflow:visible}
+ .lesson-holder .banner{display:block!important;border:0;margin-bottom:4mm;break-inside:avoid-page}
+ .lesson-holder .banner img{width:100%;max-width:100%;height:auto;max-height:30mm;object-fit:contain;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ .lesson-holder .conteudo{padding:0}
+ .lesson-holder .titulo-licao{font-size:19pt;margin:2mm 0 4mm}
+ .lesson-holder .capa-oficial{margin-bottom:4mm;break-inside:avoid-page}.lesson-holder .capa-oficial img{max-height:80mm;object-fit:contain;border-radius:2mm}
+ .lesson-holder .caca-grade td{font-size:9pt!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ .lesson-holder .caca-grade{overflow:visible}.lesson-holder .caca-grade table{width:100%}.lesson-holder .bloco,.lesson-holder .topico{break-inside:avoid-page}
+ .lesson-holder .barra-acoes-rodape{display:none!important}
+}
+
+
+/* Página complementar independente: identidade verde e menta. */
+body{background:#f3f8f5}
+.pagina{width:min(100% - 28px,980px);margin:22px auto 44px}
+.pagina>.licao-betel{width:100%;margin:0}
+.voltar-revista{display:block;margin:0 0 15px;max-width:max-content;padding:9px 15px;border-radius:10px;background:#e4f3ea;color:#145b4c;font-weight:750;text-decoration:none;border:1px solid #cde5d8}
+.voltar-revista:hover,.voltar-revista:focus-visible{background:#cfe8da}
+.barra-acoes-rodape{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;padding:12px 20px 32px}
+.barra-acoes-rodape a,.barra-acoes-rodape button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;text-align:center;font:inherit;font-weight:700;font-size:.9rem;line-height:1.3;color:white;background:#145b4c;border:0;border-radius:10px;padding:12px 15px;cursor:pointer}
+.barra-acoes-rodape a:hover,.barra-acoes-rodape button:hover{background:#0d493b;color:#fff}
+.pagina .caca-grade td{cursor:pointer;user-select:none}
+.pagina .caca-grade td.puzzle-start{background:#dff1e7;outline:2px solid #267658;outline-offset:-2px}
+.pagina .caca-grade td.found{background:#d5ecdf;color:#0d543e}
+.pagina .lista-palavras li.found{text-decoration:line-through;color:#477967}
+@media(max-width:600px){.pagina{width:100%;margin:0}.voltar-revista{margin:9px 12px}.pagina .licao-betel{border-radius:0}.barra-acoes-rodape{display:grid;grid-template-columns:1fr 1fr;padding:10px 12px 24px;gap:8px}.barra-acoes-rodape a,.barra-acoes-rodape button{font-size:.81rem;padding:12px 8px}.pagina .caca-grade td{font-size:clamp(.58rem,2.3vw,.82rem)}}
+@page{size:A4;margin:13mm}
+@media print{.voltar-revista,.barra-acoes-rodape{display:none!important}.pagina{width:100%;margin:0}.pagina .licao-betel{border:0;border-radius:0;box-shadow:none;overflow:visible}.pagina .banner{display:block!important;border:0;margin-bottom:4mm;break-inside:avoid-page}.pagina .banner img{display:block;width:100%;height:auto;max-height:30mm;object-fit:contain;print-color-adjust:exact;-webkit-print-color-adjust:exact}.pagina .conteudo{padding:0}.pagina .titulo-licao{font-size:19pt;margin:2mm 0 4mm}.pagina .capa-oficial{break-inside:avoid-page;margin-bottom:4mm}.pagina .capa-oficial img{max-height:80mm;object-fit:contain;border-radius:2mm}.pagina .caca-grade{overflow:visible}.pagina .caca-grade td{font-size:9pt!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style></head>
+<body><main class="pagina"><a class="voltar-revista" href="../index.html#licao-05">← Voltar à lição original</a><article aria-labelledby="titulo-licao-05" class="licao-betel pre-adolescentes" data-lesson="5" id="licao-05">
+<header class="banner">
+<img alt="Banner oficial do Apoio Pedagógico EBD Fiel — Pré-adolescentes de 12 a 14 anos" height="316" src="../assets/banner-apoio-pre-adolescentes.png" width="2000"/>
+</header>
+<div class="conteudo">
+<h1 class="titulo-licao" id="titulo-licao-05">ENTREGANDO DÍZIMOS E OFERTAS</h1>
+<figure class="capa-oficial"><img alt="Capa oficial da Lição 5: Entregando Dízimos e Ofertas" loading="lazy" src="../assets/capa-licao-05.png"/></figure>
+<section aria-label="Campos da lição" class="bloco campos-originais">
+<p><strong>TEXTO BÍBLICO:</strong> Gn 14.20; Ml 3.10,11.</p>
+<p><strong>MENSAGEM VALIOSA:</strong> “Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa, e depois fazei prova de mim, diz o Senhor dos Exércitos”, Ml 3.10</p>
+<p><strong>VERDADE APLICADA:</strong> O cristão demonstra fidelidade a Deus, ao entregar seu dízimo e suas ofertas.</p>
+</section>
+<section class="bloco introducao">
+<p><strong>INTRODUÇÃO:</strong> Na introdução, a lição fala sobre dízimos e ofertas como expressões de gratidão e fidelidade a Deus. O assunto envolve reconhecer que os recursos recebidos podem ser administrados com responsabilidade e utilizados também para servir outras pessoas (Ml 3.10).</p>
+<p>Muitos pré-adolescentes ainda não possuem renda própria; isso não diminui seu valor nem sua participação na comunidade. Podem aprender generosidade sem pressão financeira, por meio do cuidado com materiais, do tempo dedicado a ajudar e da compreensão de que contribuições devem ser tratadas com respeito e sinceridade.</p>
+</section>
+<section class="bloco perguntas-abertura">
+<h2>PERGUNTAS DE ABERTURA</h2>
+<div class="perguntas">
+<div class="pergunta">O que significa agradecer por algo recebido?</div>
+<div class="pergunta">Por que é importante usar bem os recursos?</div>
+<div class="pergunta">É possível ser generoso sem ter dinheiro?</div>
+</div>
+</section>
+<section class="topico">
+<p><strong>1. OS PRIMEIROS DIZIMISTAS:</strong> Neste tópico, a lição aborda exemplos antigos de gratidão a Deus por meio dos bens recebidos. Gênesis 14.20 registra a atitude de Abrão em um contexto de reconhecimento da ação divina. A ideia central para a turma é que a fé influencia também a maneira como lidamos com o que possuímos.</p>
+<p>Se um aluno recebe materiais para estudar, pode conservá-los e compartilhar o que for apropriado com permissão. Administrar bem não é acumular por medo nem ostentar para ser admirado; é reconhecer responsabilidades e valorizar o que nos foi confiado.</p>
+</section>
+<section class="bloco apoio-pedagogico">
+<h2>APOIO PEDAGÓGICO — TÓPICO 1</h2>
+<p>Mostre dez pequenos quadrados desenhados e explique visualmente o significado matemático de décima parte, sem pedir valores de renda ou informações financeiras das famílias. Relacione a conversa à gratidão e destaque que ninguém deve ser exposto ou comparado pela possibilidade de contribuir.</p>
+</section>
+<section class="bloco aplicacao-pratica">
+<p><strong>APLICAÇÃO PRÁTICA — TÓPICO 1:</strong> Durante a semana, cuide com atenção de um recurso que você utiliza, como um livro ou material escolar, e agradeça a Deus pela oportunidade de usá-lo.</p>
+</section>
+<section class="topico">
+<p><strong>2. O DÍZIMO NA BÍBLIA:</strong> Neste tópico, a lição aborda o ensino bíblico sobre dízimos e ofertas. Malaquias 3.10 está situado na vida religiosa de Israel e trata da fidelidade do povo em sua relação com Deus. O assunto convida a pensar no destino comunitário dos recursos e na seriedade da administração.</p>
+<p>Jesus também chamou a atenção para a justiça, a misericórdia e a fé, mostrando que práticas religiosas não substituem o cuidado com as pessoas (Mt 23.23). Contribuir não deve ser usado como medida pública do valor espiritual de alguém.</p>
+</section>
+<section class="bloco apoio-pedagogico">
+<h2>APOIO PEDAGÓGICO — TÓPICO 2</h2>
+<p>Apresente uma situação hipotética de organização responsável de materiais de uma atividade comunitária. Pergunte que atitudes revelam honestidade e cuidado. Ao tratar de contribuições, não solicite valores, comprovantes ou promessas financeiras de crianças e adolescentes.</p>
+</section>
+<section class="bloco aplicacao-pratica">
+<p><strong>APLICAÇÃO PRÁTICA — TÓPICO 2:</strong> Durante a semana, organize seus materiais ou ajude, com autorização, a distribuir itens de uma atividade coletiva de forma justa e cuidadosa.</p>
+</section>
+<section class="topico">
+<p><strong>3. UM SINAL DE FÉ:</strong> Neste tópico, a lição aborda a disposição de servir a Deus com o que está ao nosso alcance. Primeira Coríntios 13.3 recorda que ações externas perdem seu sentido quando falta amor. A generosidade não se resume ao valor de uma oferta.</p>
+<p>Compartilhar tempo, habilidades e atenção pode atender necessidades reais. Um adolescente pode apoiar a organização de uma atividade, explicar uma tarefa a um colega que pediu ajuda ou acolher alguém novo. Essas atitudes precisam ser voluntárias, seguras e proporcionais à idade.</p>
+</section>
+<section class="bloco apoio-pedagogico">
+<h2>APOIO PEDAGÓGICO — TÓPICO 3</h2>
+<p>Peça à turma exemplos de contribuições não financeiras para uma atividade da igreja: acolhimento, arrumação e cooperação. Diferencie generosidade de busca por elogios e deixe explícito que dinheiro não deve ser exigido nem usado para classificar alunos.</p>
+</section>
+<section class="bloco aplicacao-pratica">
+<p><strong>APLICAÇÃO PRÁTICA — TÓPICO 3:</strong> Durante a semana, pratique um gesto de generosidade que não envolva dinheiro, como dedicar tempo para ajudar alguém conhecido numa tarefa adequada à sua idade.</p>
+</section>
+<section class="bloco concluindo">
+<p><strong>CONCLUINDO:</strong> No encerramento, a lição reforça que fidelidade e gratidão alcançam o modo como administramos recursos e como tratamos o próximo. O ensino sobre dízimos e ofertas deve caminhar com amor, justiça e responsabilidade.</p>
+<p>Cada aluno pode aprender a contribuir de maneira apropriada à sua realidade, sem constrangimento ou competição. Deus conhece as intenções e nos chama a cuidar bem daquilo que recebemos.</p>
+</section>
+<section class="bloco sintese">
+<p><strong>SÍNTESE DA LIÇÃO:</strong> Generosidade cristã une gratidão, responsabilidade e amor.</p>
+</section>
+<section class="bloco caca-palavras-section" data-caca-palavras-id="preteen-05">
+<h2>Caça-palavras da lição</h2>
+<p>Encontre as oito palavras relacionadas ao tema da lição.</p>
+<div class="caca-wrapper caca-interativo" data-puzzle="05">
+<p class="caca-instrucao">Na tela, selecione a primeira e a última letra de cada palavra. Na impressão, marque as palavras com lápis.</p>
+<div class="caca-grade"><table aria-label="Caça-palavras da lição 5"><tbody><tr><td aria-label="Linha 1, coluna 1, letra L" data-c="0" data-r="0" role="button" tabindex="0">L</td><td aria-label="Linha 1, coluna 2, letra R" data-c="1" data-r="0" role="button" tabindex="0">R</td><td aria-label="Linha 1, coluna 3, letra Y" data-c="2" data-r="0" role="button" tabindex="0">Y</td><td aria-label="Linha 1, coluna 4, letra A" data-c="3" data-r="0" role="button" tabindex="0">A</td><td aria-label="Linha 1, coluna 5, letra X" data-c="4" data-r="0" role="button" tabindex="0">X</td><td aria-label="Linha 1, coluna 6, letra J" data-c="5" data-r="0" role="button" tabindex="0">J</td><td aria-label="Linha 1, coluna 7, letra W" data-c="6" data-r="0" role="button" tabindex="0">W</td><td aria-label="Linha 1, coluna 8, letra Z" data-c="7" data-r="0" role="button" tabindex="0">Z</td><td aria-label="Linha 1, coluna 9, letra R" data-c="8" data-r="0" role="button" tabindex="0">R</td><td aria-label="Linha 1, coluna 10, letra W" data-c="9" data-r="0" role="button" tabindex="0">W</td><td aria-label="Linha 1, coluna 11, letra K" data-c="10" data-r="0" role="button" tabindex="0">K</td><td aria-label="Linha 1, coluna 12, letra P" data-c="11" data-r="0" role="button" tabindex="0">P</td><td aria-label="Linha 1, coluna 13, letra C" data-c="12" data-r="0" role="button" tabindex="0">C</td><td aria-label="Linha 1, coluna 14, letra P" data-c="13" data-r="0" role="button" tabindex="0">P</td><td aria-label="Linha 1, coluna 15, letra D" data-c="14" data-r="0" role="button" tabindex="0">D</td></tr><tr><td aria-label="Linha 2, coluna 1, letra B" data-c="0" data-r="1" role="button" tabindex="0">B</td><td aria-label="Linha 2, coluna 2, letra G" data-c="1" data-r="1" role="button" tabindex="0">G</td><td aria-label="Linha 2, coluna 3, letra F" data-c="2" data-r="1" role="button" tabindex="0">F</td><td aria-label="Linha 2, coluna 4, letra R" data-c="3" data-r="1" role="button" tabindex="0">R</td><td aria-label="Linha 2, coluna 5, letra G" data-c="4" data-r="1" role="button" tabindex="0">G</td><td aria-label="Linha 2, coluna 6, letra L" data-c="5" data-r="1" role="button" tabindex="0">L</td><td aria-label="Linha 2, coluna 7, letra F" data-c="6" data-r="1" role="button" tabindex="0">F</td><td aria-label="Linha 2, coluna 8, letra T" data-c="7" data-r="1" role="button" tabindex="0">T</td><td aria-label="Linha 2, coluna 9, letra A" data-c="8" data-r="1" role="button" tabindex="0">A</td><td aria-label="Linha 2, coluna 10, letra K" data-c="9" data-r="1" role="button" tabindex="0">K</td><td aria-label="Linha 2, coluna 11, letra L" data-c="10" data-r="1" role="button" tabindex="0">L</td><td aria-label="Linha 2, coluna 12, letra P" data-c="11" data-r="1" role="button" tabindex="0">P</td><td aria-label="Linha 2, coluna 13, letra W" data-c="12" data-r="1" role="button" tabindex="0">W</td><td aria-label="Linha 2, coluna 14, letra H" data-c="13" data-r="1" role="button" tabindex="0">H</td><td aria-label="Linha 2, coluna 15, letra I" data-c="14" data-r="1" role="button" tabindex="0">I</td></tr><tr><td aria-label="Linha 3, coluna 1, letra N" data-c="0" data-r="2" role="button" tabindex="0">N</td><td aria-label="Linha 3, coluna 2, letra L" data-c="1" data-r="2" role="button" tabindex="0">L</td><td aria-label="Linha 3, coluna 3, letra Q" data-c="2" data-r="2" role="button" tabindex="0">Q</td><td aria-label="Linha 3, coluna 4, letra O" data-c="3" data-r="2" role="button" tabindex="0">O</td><td aria-label="Linha 3, coluna 5, letra F" data-c="4" data-r="2" role="button" tabindex="0">F</td><td aria-label="Linha 3, coluna 6, letra R" data-c="5" data-r="2" role="button" tabindex="0">R</td><td aria-label="Linha 3, coluna 7, letra L" data-c="6" data-r="2" role="button" tabindex="0">L</td><td aria-label="Linha 3, coluna 8, letra S" data-c="7" data-r="2" role="button" tabindex="0">S</td><td aria-label="Linha 3, coluna 9, letra M" data-c="8" data-r="2" role="button" tabindex="0">M</td><td aria-label="Linha 3, coluna 10, letra Z" data-c="9" data-r="2" role="button" tabindex="0">Z</td><td aria-label="Linha 3, coluna 11, letra Z" data-c="10" data-r="2" role="button" tabindex="0">Z</td><td aria-label="Linha 3, coluna 12, letra H" data-c="11" data-r="2" role="button" tabindex="0">H</td><td aria-label="Linha 3, coluna 13, letra N" data-c="12" data-r="2" role="button" tabindex="0">N</td><td aria-label="Linha 3, coluna 14, letra J" data-c="13" data-r="2" role="button" tabindex="0">J</td><td aria-label="Linha 3, coluna 15, letra Z" data-c="14" data-r="2" role="button" tabindex="0">Z</td></tr><tr><td aria-label="Linha 4, coluna 1, letra K" data-c="0" data-r="3" role="button" tabindex="0">K</td><td aria-label="Linha 4, coluna 2, letra Y" data-c="1" data-r="3" role="button" tabindex="0">Y</td><td aria-label="Linha 4, coluna 3, letra L" data-c="2" data-r="3" role="button" tabindex="0">L</td><td aria-label="Linha 4, coluna 4, letra S" data-c="3" data-r="3" role="button" tabindex="0">S</td><td aria-label="Linha 4, coluna 5, letra J" data-c="4" data-r="3" role="button" tabindex="0">J</td><td aria-label="Linha 4, coluna 6, letra E" data-c="5" data-r="3" role="button" tabindex="0">E</td><td aria-label="Linha 4, coluna 7, letra A" data-c="6" data-r="3" role="button" tabindex="0">A</td><td aria-label="Linha 4, coluna 8, letra W" data-c="7" data-r="3" role="button" tabindex="0">W</td><td aria-label="Linha 4, coluna 9, letra O" data-c="8" data-r="3" role="button" tabindex="0">O</td><td aria-label="Linha 4, coluna 10, letra K" data-c="9" data-r="3" role="button" tabindex="0">K</td><td aria-label="Linha 4, coluna 11, letra S" data-c="10" data-r="3" role="button" tabindex="0">S</td><td aria-label="Linha 4, coluna 12, letra O" data-c="11" data-r="3" role="button" tabindex="0">O</td><td aria-label="Linha 4, coluna 13, letra H" data-c="12" data-r="3" role="button" tabindex="0">H</td><td aria-label="Linha 4, coluna 14, letra D" data-c="13" data-r="3" role="button" tabindex="0">D</td><td aria-label="Linha 4, coluna 15, letra I" data-c="14" data-r="3" role="button" tabindex="0">I</td></tr><tr><td aria-label="Linha 5, coluna 1, letra M" data-c="0" data-r="4" role="button" tabindex="0">M</td><td aria-label="Linha 5, coluna 2, letra B" data-c="1" data-r="4" role="button" tabindex="0">B</td><td aria-label="Linha 5, coluna 3, letra N" data-c="2" data-r="4" role="button" tabindex="0">N</td><td aria-label="Linha 5, coluna 4, letra Q" data-c="3" data-r="4" role="button" tabindex="0">Q</td><td aria-label="Linha 5, coluna 5, letra F" data-c="4" data-r="4" role="button" tabindex="0">F</td><td aria-label="Linha 5, coluna 6, letra D" data-c="5" data-r="4" role="button" tabindex="0">D</td><td aria-label="Linha 5, coluna 7, letra L" data-c="6" data-r="4" role="button" tabindex="0">L</td><td aria-label="Linha 5, coluna 8, letra T" data-c="7" data-r="4" role="button" tabindex="0">T</td><td aria-label="Linha 5, coluna 9, letra R" data-c="8" data-r="4" role="button" tabindex="0">R</td><td aria-label="Linha 5, coluna 10, letra F" data-c="9" data-r="4" role="button" tabindex="0">F</td><td aria-label="Linha 5, coluna 11, letra K" data-c="10" data-r="4" role="button" tabindex="0">K</td><td aria-label="Linha 5, coluna 12, letra E" data-c="11" data-r="4" role="button" tabindex="0">E</td><td aria-label="Linha 5, coluna 13, letra H" data-c="12" data-r="4" role="button" tabindex="0">H</td><td aria-label="Linha 5, coluna 14, letra M" data-c="13" data-r="4" role="button" tabindex="0">M</td><td aria-label="Linha 5, coluna 15, letra M" data-c="14" data-r="4" role="button" tabindex="0">M</td></tr><tr><td aria-label="Linha 6, coluna 1, letra O" data-c="0" data-r="5" role="button" tabindex="0">O</td><td aria-label="Linha 6, coluna 2, letra F" data-c="1" data-r="5" role="button" tabindex="0">F</td><td aria-label="Linha 6, coluna 3, letra E" data-c="2" data-r="5" role="button" tabindex="0">E</td><td aria-label="Linha 6, coluna 4, letra R" data-c="3" data-r="5" role="button" tabindex="0">R</td><td aria-label="Linha 6, coluna 5, letra T" data-c="4" data-r="5" role="button" tabindex="0">T</td><td aria-label="Linha 6, coluna 6, letra A" data-c="5" data-r="5" role="button" tabindex="0">A</td><td aria-label="Linha 6, coluna 7, letra S" data-c="6" data-r="5" role="button" tabindex="0">S</td><td aria-label="Linha 6, coluna 8, letra S" data-c="7" data-r="5" role="button" tabindex="0">S</td><td aria-label="Linha 6, coluna 9, letra I" data-c="8" data-r="5" role="button" tabindex="0">I</td><td aria-label="Linha 6, coluna 10, letra I" data-c="9" data-r="5" role="button" tabindex="0">I</td><td aria-label="Linha 6, coluna 11, letra Q" data-c="10" data-r="5" role="button" tabindex="0">Q</td><td aria-label="Linha 6, coluna 12, letra P" data-c="11" data-r="5" role="button" tabindex="0">P</td><td aria-label="Linha 6, coluna 13, letra A" data-c="12" data-r="5" role="button" tabindex="0">A</td><td aria-label="Linha 6, coluna 14, letra R" data-c="13" data-r="5" role="button" tabindex="0">R</td><td aria-label="Linha 6, coluna 15, letra O" data-c="14" data-r="5" role="button" tabindex="0">O</td></tr><tr><td aria-label="Linha 7, coluna 1, letra O" data-c="0" data-r="6" role="button" tabindex="0">O</td><td aria-label="Linha 7, coluna 2, letra J" data-c="1" data-r="6" role="button" tabindex="0">J</td><td aria-label="Linha 7, coluna 3, letra G" data-c="2" data-r="6" role="button" tabindex="0">G</td><td aria-label="Linha 7, coluna 4, letra C" data-c="3" data-r="6" role="button" tabindex="0">C</td><td aria-label="Linha 7, coluna 5, letra B" data-c="4" data-r="6" role="button" tabindex="0">B</td><td aria-label="Linha 7, coluna 6, letra D" data-c="5" data-r="6" role="button" tabindex="0">D</td><td aria-label="Linha 7, coluna 7, letra P" data-c="6" data-r="6" role="button" tabindex="0">P</td><td aria-label="Linha 7, coluna 8, letra C" data-c="7" data-r="6" role="button" tabindex="0">C</td><td aria-label="Linha 7, coluna 9, letra U" data-c="8" data-r="6" role="button" tabindex="0">U</td><td aria-label="Linha 7, coluna 10, letra D" data-c="9" data-r="6" role="button" tabindex="0">D</td><td aria-label="Linha 7, coluna 11, letra J" data-c="10" data-r="6" role="button" tabindex="0">J</td><td aria-label="Linha 7, coluna 12, letra D" data-c="11" data-r="6" role="button" tabindex="0">D</td><td aria-label="Linha 7, coluna 13, letra M" data-c="12" data-r="6" role="button" tabindex="0">M</td><td aria-label="Linha 7, coluna 14, letra C" data-c="13" data-r="6" role="button" tabindex="0">C</td><td aria-label="Linha 7, coluna 15, letra A" data-c="14" data-r="6" role="button" tabindex="0">A</td></tr><tr><td aria-label="Linha 8, coluna 1, letra G" data-c="0" data-r="7" role="button" tabindex="0">G</td><td aria-label="Linha 8, coluna 2, letra D" data-c="1" data-r="7" role="button" tabindex="0">D</td><td aria-label="Linha 8, coluna 3, letra J" data-c="2" data-r="7" role="button" tabindex="0">J</td><td aria-label="Linha 8, coluna 4, letra Q" data-c="3" data-r="7" role="button" tabindex="0">Q</td><td aria-label="Linha 8, coluna 5, letra O" data-c="4" data-r="7" role="button" tabindex="0">O</td><td aria-label="Linha 8, coluna 6, letra I" data-c="5" data-r="7" role="button" tabindex="0">I</td><td aria-label="Linha 8, coluna 7, letra Z" data-c="6" data-r="7" role="button" tabindex="0">Z</td><td aria-label="Linha 8, coluna 8, letra R" data-c="7" data-r="7" role="button" tabindex="0">R</td><td aria-label="Linha 8, coluna 9, letra Z" data-c="8" data-r="7" role="button" tabindex="0">Z</td><td aria-label="Linha 8, coluna 10, letra E" data-c="9" data-r="7" role="button" tabindex="0">E</td><td aria-label="Linha 8, coluna 11, letra A" data-c="10" data-r="7" role="button" tabindex="0">A</td><td aria-label="Linha 8, coluna 12, letra F" data-c="11" data-r="7" role="button" tabindex="0">F</td><td aria-label="Linha 8, coluna 13, letra J" data-c="12" data-r="7" role="button" tabindex="0">J</td><td aria-label="Linha 8, coluna 14, letra R" data-c="13" data-r="7" role="button" tabindex="0">R</td><td aria-label="Linha 8, coluna 15, letra H" data-c="14" data-r="7" role="button" tabindex="0">H</td></tr><tr><td aria-label="Linha 9, coluna 1, letra Z" data-c="0" data-r="8" role="button" tabindex="0">Z</td><td aria-label="Linha 9, coluna 2, letra H" data-c="1" data-r="8" role="button" tabindex="0">H</td><td aria-label="Linha 9, coluna 3, letra W" data-c="2" data-r="8" role="button" tabindex="0">W</td><td aria-label="Linha 9, coluna 4, letra I" data-c="3" data-r="8" role="button" tabindex="0">I</td><td aria-label="Linha 9, coluna 5, letra Q" data-c="4" data-r="8" role="button" tabindex="0">Q</td><td aria-label="Linha 9, coluna 6, letra S" data-c="5" data-r="8" role="button" tabindex="0">S</td><td aria-label="Linha 9, coluna 7, letra Q" data-c="6" data-r="8" role="button" tabindex="0">Q</td><td aria-label="Linha 9, coluna 8, letra O" data-c="7" data-r="8" role="button" tabindex="0">O</td><td aria-label="Linha 9, coluna 9, letra V" data-c="8" data-r="8" role="button" tabindex="0">V</td><td aria-label="Linha 9, coluna 10, letra L" data-c="9" data-r="8" role="button" tabindex="0">L</td><td aria-label="Linha 9, coluna 11, letra D" data-c="10" data-r="8" role="button" tabindex="0">D</td><td aria-label="Linha 9, coluna 12, letra O" data-c="11" data-r="8" role="button" tabindex="0">O</td><td aria-label="Linha 9, coluna 13, letra N" data-c="12" data-r="8" role="button" tabindex="0">N</td><td aria-label="Linha 9, coluna 14, letra M" data-c="13" data-r="8" role="button" tabindex="0">M</td><td aria-label="Linha 9, coluna 15, letra T" data-c="14" data-r="8" role="button" tabindex="0">T</td></tr><tr><td aria-label="Linha 10, coluna 1, letra T" data-c="0" data-r="9" role="button" tabindex="0">T</td><td aria-label="Linha 10, coluna 2, letra E" data-c="1" data-r="9" role="button" tabindex="0">E</td><td aria-label="Linha 10, coluna 3, letra K" data-c="2" data-r="9" role="button" tabindex="0">K</td><td aria-label="Linha 10, coluna 4, letra Y" data-c="3" data-r="9" role="button" tabindex="0">Y</td><td aria-label="Linha 10, coluna 5, letra W" data-c="4" data-r="9" role="button" tabindex="0">W</td><td aria-label="Linha 10, coluna 6, letra O" data-c="5" data-r="9" role="button" tabindex="0">O</td><td aria-label="Linha 10, coluna 7, letra V" data-c="6" data-r="9" role="button" tabindex="0">V</td><td aria-label="Linha 10, coluna 8, letra S" data-c="7" data-r="9" role="button" tabindex="0">S</td><td aria-label="Linha 10, coluna 9, letra N" data-c="8" data-r="9" role="button" tabindex="0">N</td><td aria-label="Linha 10, coluna 10, letra I" data-c="9" data-r="9" role="button" tabindex="0">I</td><td aria-label="Linha 10, coluna 11, letra P" data-c="10" data-r="9" role="button" tabindex="0">P</td><td aria-label="Linha 10, coluna 12, letra O" data-c="11" data-r="9" role="button" tabindex="0">O</td><td aria-label="Linha 10, coluna 13, letra D" data-c="12" data-r="9" role="button" tabindex="0">D</td><td aria-label="Linha 10, coluna 14, letra B" data-c="13" data-r="9" role="button" tabindex="0">B</td><td aria-label="Linha 10, coluna 15, letra H" data-c="14" data-r="9" role="button" tabindex="0">H</td></tr><tr><td aria-label="Linha 11, coluna 1, letra Y" data-c="0" data-r="10" role="button" tabindex="0">Y</td><td aria-label="Linha 11, coluna 2, letra W" data-c="1" data-r="10" role="button" tabindex="0">W</td><td aria-label="Linha 11, coluna 3, letra H" data-c="2" data-r="10" role="button" tabindex="0">H</td><td aria-label="Linha 11, coluna 4, letra N" data-c="3" data-r="10" role="button" tabindex="0">N</td><td aria-label="Linha 11, coluna 5, letra O" data-c="4" data-r="10" role="button" tabindex="0">O</td><td aria-label="Linha 11, coluna 6, letra R" data-c="5" data-r="10" role="button" tabindex="0">R</td><td aria-label="Linha 11, coluna 7, letra X" data-c="6" data-r="10" role="button" tabindex="0">X</td><td aria-label="Linha 11, coluna 8, letra R" data-c="7" data-r="10" role="button" tabindex="0">R</td><td aria-label="Linha 11, coluna 9, letra L" data-c="8" data-r="10" role="button" tabindex="0">L</td><td aria-label="Linha 11, coluna 10, letra D" data-c="9" data-r="10" role="button" tabindex="0">D</td><td aria-label="Linha 11, coluna 11, letra H" data-c="10" data-r="10" role="button" tabindex="0">H</td><td aria-label="Linha 11, coluna 12, letra V" data-c="11" data-r="10" role="button" tabindex="0">V</td><td aria-label="Linha 11, coluna 13, letra Y" data-c="12" data-r="10" role="button" tabindex="0">Y</td><td aria-label="Linha 11, coluna 14, letra B" data-c="13" data-r="10" role="button" tabindex="0">B</td><td aria-label="Linha 11, coluna 15, letra I" data-c="14" data-r="10" role="button" tabindex="0">I</td></tr><tr><td aria-label="Linha 12, coluna 1, letra W" data-c="0" data-r="11" role="button" tabindex="0">W</td><td aria-label="Linha 12, coluna 2, letra C" data-c="1" data-r="11" role="button" tabindex="0">C</td><td aria-label="Linha 12, coluna 3, letra B" data-c="2" data-r="11" role="button" tabindex="0">B</td><td aria-label="Linha 12, coluna 4, letra D" data-c="3" data-r="11" role="button" tabindex="0">D</td><td aria-label="Linha 12, coluna 5, letra K" data-c="4" data-r="11" role="button" tabindex="0">K</td><td aria-label="Linha 12, coluna 6, letra E" data-c="5" data-r="11" role="button" tabindex="0">E</td><td aria-label="Linha 12, coluna 7, letra B" data-c="6" data-r="11" role="button" tabindex="0">B</td><td aria-label="Linha 12, coluna 8, letra D" data-c="7" data-r="11" role="button" tabindex="0">D</td><td aria-label="Linha 12, coluna 9, letra B" data-c="8" data-r="11" role="button" tabindex="0">B</td><td aria-label="Linha 12, coluna 10, letra A" data-c="9" data-r="11" role="button" tabindex="0">A</td><td aria-label="Linha 12, coluna 11, letra K" data-c="10" data-r="11" role="button" tabindex="0">K</td><td aria-label="Linha 12, coluna 12, letra P" data-c="11" data-r="11" role="button" tabindex="0">P</td><td aria-label="Linha 12, coluna 13, letra W" data-c="12" data-r="11" role="button" tabindex="0">W</td><td aria-label="Linha 12, coluna 14, letra E" data-c="13" data-r="11" role="button" tabindex="0">E</td><td aria-label="Linha 12, coluna 15, letra B" data-c="14" data-r="11" role="button" tabindex="0">B</td></tr><tr><td aria-label="Linha 13, coluna 1, letra L" data-c="0" data-r="12" role="button" tabindex="0">L</td><td aria-label="Linha 13, coluna 2, letra O" data-c="1" data-r="12" role="button" tabindex="0">O</td><td aria-label="Linha 13, coluna 3, letra Q" data-c="2" data-r="12" role="button" tabindex="0">Q</td><td aria-label="Linha 13, coluna 4, letra E" data-c="3" data-r="12" role="button" tabindex="0">E</td><td aria-label="Linha 13, coluna 5, letra T" data-c="4" data-r="12" role="button" tabindex="0">T</td><td aria-label="Linha 13, coluna 6, letra N" data-c="5" data-r="12" role="button" tabindex="0">N</td><td aria-label="Linha 13, coluna 7, letra L" data-c="6" data-r="12" role="button" tabindex="0">L</td><td aria-label="Linha 13, coluna 8, letra S" data-c="7" data-r="12" role="button" tabindex="0">S</td><td aria-label="Linha 13, coluna 9, letra O" data-c="8" data-r="12" role="button" tabindex="0">O</td><td aria-label="Linha 13, coluna 10, letra D" data-c="9" data-r="12" role="button" tabindex="0">D</td><td aria-label="Linha 13, coluna 11, letra G" data-c="10" data-r="12" role="button" tabindex="0">G</td><td aria-label="Linha 13, coluna 12, letra V" data-c="11" data-r="12" role="button" tabindex="0">V</td><td aria-label="Linha 13, coluna 13, letra T" data-c="12" data-r="12" role="button" tabindex="0">T</td><td aria-label="Linha 13, coluna 14, letra P" data-c="13" data-r="12" role="button" tabindex="0">P</td><td aria-label="Linha 13, coluna 15, letra V" data-c="14" data-r="12" role="button" tabindex="0">V</td></tr><tr><td aria-label="Linha 14, coluna 1, letra N" data-c="0" data-r="13" role="button" tabindex="0">N</td><td aria-label="Linha 14, coluna 2, letra S" data-c="1" data-r="13" role="button" tabindex="0">S</td><td aria-label="Linha 14, coluna 3, letra U" data-c="2" data-r="13" role="button" tabindex="0">U</td><td aria-label="Linha 14, coluna 4, letra N" data-c="3" data-r="13" role="button" tabindex="0">N</td><td aria-label="Linha 14, coluna 5, letra E" data-c="4" data-r="13" role="button" tabindex="0">E</td><td aria-label="Linha 14, coluna 6, letra E" data-c="5" data-r="13" role="button" tabindex="0">E</td><td aria-label="Linha 14, coluna 7, letra T" data-c="6" data-r="13" role="button" tabindex="0">T</td><td aria-label="Linha 14, coluna 8, letra E" data-c="7" data-r="13" role="button" tabindex="0">E</td><td aria-label="Linha 14, coluna 9, letra Y" data-c="8" data-r="13" role="button" tabindex="0">Y</td><td aria-label="Linha 14, coluna 10, letra E" data-c="9" data-r="13" role="button" tabindex="0">E</td><td aria-label="Linha 14, coluna 11, letra F" data-c="10" data-r="13" role="button" tabindex="0">F</td><td aria-label="Linha 14, coluna 12, letra Z" data-c="11" data-r="13" role="button" tabindex="0">Z</td><td aria-label="Linha 14, coluna 13, letra K" data-c="12" data-r="13" role="button" tabindex="0">K</td><td aria-label="Linha 14, coluna 14, letra Q" data-c="13" data-r="13" role="button" tabindex="0">Q</td><td aria-label="Linha 14, coluna 15, letra C" data-c="14" data-r="13" role="button" tabindex="0">C</td></tr><tr><td aria-label="Linha 15, coluna 1, letra Z" data-c="0" data-r="14" role="button" tabindex="0">Z</td><td aria-label="Linha 15, coluna 2, letra N" data-c="1" data-r="14" role="button" tabindex="0">N</td><td aria-label="Linha 15, coluna 3, letra P" data-c="2" data-r="14" role="button" tabindex="0">P</td><td aria-label="Linha 15, coluna 4, letra G" data-c="3" data-r="14" role="button" tabindex="0">G</td><td aria-label="Linha 15, coluna 5, letra Z" data-c="4" data-r="14" role="button" tabindex="0">Z</td><td aria-label="Linha 15, coluna 6, letra G" data-c="5" data-r="14" role="button" tabindex="0">G</td><td aria-label="Linha 15, coluna 7, letra X" data-c="6" data-r="14" role="button" tabindex="0">X</td><td aria-label="Linha 15, coluna 8, letra Y" data-c="7" data-r="14" role="button" tabindex="0">Y</td><td aria-label="Linha 15, coluna 9, letra A" data-c="8" data-r="14" role="button" tabindex="0">A</td><td aria-label="Linha 15, coluna 10, letra S" data-c="9" data-r="14" role="button" tabindex="0">S</td><td aria-label="Linha 15, coluna 11, letra H" data-c="10" data-r="14" role="button" tabindex="0">H</td><td aria-label="Linha 15, coluna 12, letra H" data-c="11" data-r="14" role="button" tabindex="0">H</td><td aria-label="Linha 15, coluna 13, letra C" data-c="12" data-r="14" role="button" tabindex="0">C</td><td aria-label="Linha 15, coluna 14, letra K" data-c="13" data-r="14" role="button" tabindex="0">K</td><td aria-label="Linha 15, coluna 15, letra I" data-c="14" data-r="14" role="button" tabindex="0">I</td></tr></tbody></table></div>
+<div class="caca-palavras-apoio"><h3>Palavras para encontrar</h3><ul class="lista-palavras"><li data-word="DIZIMO">DIZIMO</li><li data-word="OFERTAS">OFERTAS</li><li data-word="GRATIDAO">GRATIDAO</li><li data-word="HONRA">HONRA</li><li data-word="FIDELIDADE">FIDELIDADE</li><li data-word="DEUS">DEUS</li><li data-word="GENEROSIDADE">GENEROSIDADE</li><li data-word="AMOR">AMOR</li></ul><p aria-live="polite" class="caca-status" role="status">0 de 8 palavras encontradas.</p></div>
+</div></section>
+</div>
+<div class="barra-acoes-rodape"><button onclick="window.print()" type="button">Imprimir / Salvar A4</button><a download="apoio-pedagogico-licao-05-pre-adolescentes.pdf" href="../pdf/apoios/a4/apoio-pedagogico-licao-05-pre-adolescentes.pdf">Baixar PDF A4</a><a download="apoio-pedagogico-licao-05-pre-adolescentes.pdf" href="../pdf/apoios/mobile/apoio-pedagogico-licao-05-pre-adolescentes.pdf">Baixar PDF para celular</a><a data-a4="../pdf/apoios/a4/apoio-pedagogico-licao-05-pre-adolescentes.pdf" data-auto-pdf="1" data-mobile="../pdf/apoios/mobile/apoio-pedagogico-licao-05-pre-adolescentes.pdf" download="apoio-pedagogico-licao-05-pre-adolescentes.pdf" href="../pdf/apoios/a4/apoio-pedagogico-licao-05-pre-adolescentes.pdf">Baixar PDF automático</a></div>
+</article></main><script>"use strict";
+const solutions={"5":[{"word":"GENEROSIDADE","start":[14,5],"end":[3,5],"cells":[[14,5],[13,5],[12,5],[11,5],[10,5],[9,5],[8,5],[7,5],[6,5],[5,5],[4,5],[3,5]]},{"word":"FIDELIDADE","start":[4,9],"end":[13,9],"cells":[[4,9],[5,9],[6,9],[7,9],[8,9],[9,9],[10,9],[11,9],[12,9],[13,9]]},{"word":"GRATIDAO","start":[1,4],"end":[8,11],"cells":[[1,4],[2,5],[3,6],[4,7],[5,8],[6,9],[7,10],[8,11]]},{"word":"OFERTAS","start":[5,0],"end":[5,6],"cells":[[5,0],[5,1],[5,2],[5,3],[5,4],[5,5],[5,6]]},{"word":"DIZIMO","start":[0,14],"end":[5,14],"cells":[[0,14],[1,14],[2,14],[3,14],[4,14],[5,14]]},{"word":"HONRA","start":[10,10],"end":[6,14],"cells":[[10,10],[9,11],[8,12],[7,13],[6,14]]},{"word":"DEUS","start":[8,10],"end":[5,7],"cells":[[8,10],[7,9],[6,8],[5,7]]},{"word":"AMOR","start":[1,8],"end":[4,8],"cells":[[1,8],[2,8],[3,8],[4,8]]}]};
+for(const [number,placed] of Object.entries(solutions)){
+ const area=document.querySelector(`.caca-interativo[data-puzzle="${String(number).padStart(2,'0')}"]`);if(!area)continue;
+ let start=null;const done=new Set();const grid=area.querySelector('.caca-grade');const msg=area.querySelector('.caca-status');
+ grid.addEventListener('click',e=>{
+  const cell=e.target.closest('td[data-r]');if(!cell)return;
+  const coord=[Number(cell.dataset.r),Number(cell.dataset.c)];
+  if(!start){start=coord;cell.classList.add('puzzle-start');msg.textContent='Escolha a última letra da palavra.';return;}
+  grid.querySelectorAll('.puzzle-start').forEach(el=>el.classList.remove('puzzle-start'));
+  const found=placed.find(p=>!done.has(p.word)&&((p.start[0]===start[0]&&p.start[1]===start[1]&&p.end[0]===coord[0]&&p.end[1]===coord[1])||(p.end[0]===start[0]&&p.end[1]===start[1]&&p.start[0]===coord[0]&&p.start[1]===coord[1])));
+  start=null;
+  if(!found){msg.textContent='Tente novamente: escolha a primeira e a última letra de uma palavra da lista.';return;}
+  done.add(found.word);found.cells.forEach(([r,c])=>grid.querySelector(`td[data-r="${r}"][data-c="${c}"]`).classList.add('found'));
+  area.querySelectorAll('li[data-word]').forEach(li=>{if(li.dataset.word===found.word)li.classList.add('found');});
+  msg.textContent=done.size===8?'Parabéns! Você encontrou as oito palavras.':`${done.size} de 8 palavras encontradas.`;
+ });
+ grid.addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)&&e.target.matches('td[data-r]')){e.preventDefault();e.target.click();}});
+}
+
+const autoLink=document.querySelector('[data-auto-pdf]');
+if(autoLink)autoLink.addEventListener('click',()=>{autoLink.href=window.matchMedia('(max-width: 600px)').matches?autoLink.dataset.mobile:autoLink.dataset.a4;});
+</script></body></html>
