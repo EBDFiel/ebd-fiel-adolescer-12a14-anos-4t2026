@@ -49,264 +49,395 @@
 @media(max-width:500px){.prompts-link{font-size:.92rem;padding:12px 13px;flex:1 1 100%}}
 @media print{.prompts-link{display:none!important}}
 </style>
-<style id="ebd-visual-moderno-pre-4t2026">
-
+<style id="ebd-modelo-adultos-padronizado-2026">
 @media screen {
   :root{
-    --modern-deep:#0d2f5f;
-    --modern-deep2:#081f42;
-    --modern-blue:#1667c7;
-    --modern-cyan:#29b6d4;
-    --modern-yellow:#f0c63d;
-    --modern-soft:#eef7fc;
-    --modern-paper:#fffefd;
-    --modern-ink:#203047;
-    --modern-line:#d6e6ef;
-    --modern-shadow:0 18px 44px rgba(13,47,95,.11);
+    --navy:#123b75;
+    --navy2:#0a2752;
+    --gold:#f0c63d;
+    --accent:#21aeca;
+    --cream:#eef7fb;
+    --paper:#fffefd;
+    --ink:#233248;
+    --muted:#68757d;
+    --line:#d5e5ee;
+    --green:#2f6a57;
+    --shadow:0 18px 46px rgba(18,59,117,.10);
+    --sidebar:306px;
   }
 
-  html{scroll-padding-top:18px}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:20px}
   body{
-    color:var(--modern-ink);
+    margin:0;
+    color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    line-height:1.7;
     background:
-      radial-gradient(circle at 88% 2%,rgba(41,182,212,.16),transparent 25rem),
-      radial-gradient(circle at 14% 16%,rgba(240,198,61,.08),transparent 22rem),
-      linear-gradient(180deg,#edf7fc 0%,#f7f8f7 36rem,#f5f7fa 100%);
+      radial-gradient(circle at 86% 2%,rgba(33,174,202,.16),transparent 27rem),
+      radial-gradient(circle at 16% 17%,rgba(240,198,61,.08),transparent 24rem),
+      linear-gradient(180deg,#edf7fc 0%,#f7f8f6 34rem,#f5f7fa 100%);
   }
 
-  .sitehead{
-    position:relative;
-    overflow:hidden;
-    padding:20px clamp(16px,3vw,42px);
-    border-bottom:0;
-    color:#fff;
-    background:
-      radial-gradient(circle at 88% 15%,rgba(41,182,212,.34),transparent 26rem),
-      linear-gradient(125deg,var(--modern-deep2),var(--modern-deep) 58%,#145a9a);
-    box-shadow:0 12px 34px rgba(8,31,66,.14);
-  }
-  .sitehead::after{
-    content:"";position:absolute;right:-75px;top:-105px;width:240px;height:240px;
-    border:1px solid rgba(255,255,255,.12);border-radius:50%;
-    box-shadow:0 0 0 38px rgba(255,255,255,.025);pointer-events:none;
-  }
-  .brand{position:relative;z-index:1}
-  .brand-logo{
-    border-radius:18px;
-    background:rgba(255,255,255,.96);
-    box-shadow:0 10px 28px rgba(5,25,50,.16);
-  }
-  .brand small{color:#eaf7ff;font-weight:800;letter-spacing:.04em}
+  .app{display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr);min-height:100vh}
 
-  .layout{gap:26px;padding-top:28px}
   .sidebar{
-    position:sticky;top:14px;
-    border:1px solid rgba(255,255,255,.10);
-    border-radius:20px;
-    color:#fff;
+    position:sticky;top:0;height:100vh;overflow:auto;
+    padding:24px 18px 30px;color:#fff;
     background:
-      radial-gradient(circle at 100% 0%,rgba(41,182,212,.22),transparent 35%),
-      linear-gradient(180deg,var(--modern-deep),var(--modern-deep2));
-    box-shadow:0 18px 40px rgba(13,47,95,.14);
-    padding:20px 17px;
-  }
-  .sidebar h2{color:#fff;margin-bottom:7px}
-  .sidebar > p{color:#cfe0ee;line-height:1.5}
-  #lesson-index{gap:5px}
-  #lesson-index li{
-    border-bottom:0;
-    border-radius:11px;
-    padding:2px;
-    transition:background .16s ease,transform .16s ease;
-  }
-  #lesson-index li:hover{background:rgba(255,255,255,.07);transform:translateX(2px)}
-  #lesson-index a{color:#e8f3fb}
-  #lesson-index a.active{
-    color:#fff;
-    background:linear-gradient(135deg,rgba(41,182,212,.28),rgba(22,103,199,.24));
-    border-color:rgba(255,255,255,.12);
-    box-shadow:inset 3px 0 0 var(--modern-yellow);
-  }
-  #lesson-index .pages{color:#a8c8dc}
-
-  .toolbar{
-    border:1px solid var(--modern-line);
-    border-top:4px solid var(--modern-cyan);
-    border-radius:18px;
-    background:rgba(255,255,255,.92);
-    box-shadow:0 12px 30px rgba(13,47,95,.07);
-    backdrop-filter:blur(8px);
-  }
-  .toolbar label{color:var(--modern-deep)}
-  .toolbar input{
-    border-color:#c7dce9;
-    border-radius:11px;
-    background:#fff;
-  }
-  .toolbar button{
-    border-radius:10px;
-    background:linear-gradient(135deg,var(--modern-deep),#16568e);
-    border-color:var(--modern-deep);
-    box-shadow:0 5px 14px rgba(13,47,95,.12);
-  }
-  .toolbar button.secondary{
-    background:#fff;color:var(--modern-deep);border-color:#c7dce9;box-shadow:none;
+      radial-gradient(circle at 100% 0%,rgba(33,174,202,.24),transparent 36%),
+      radial-gradient(circle at 10% 92%,rgba(240,198,61,.13),transparent 42%),
+      linear-gradient(180deg,var(--navy) 0%,var(--navy2) 70%,#071b39 100%);
+    border-right:1px solid rgba(255,255,255,.09);
+    box-shadow:10px 0 34px rgba(18,59,117,.10);
+    scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.28) transparent;
+    z-index:90;
   }
 
-  .lesson-page{
-    overflow:hidden;
-    margin-bottom:70px;
-    border:1px solid var(--modern-line);
-    border-radius:24px;
-    background:var(--modern-paper);
-    box-shadow:var(--modern-shadow);
+  .brand{
+    position:relative;overflow:hidden;
+    margin:0 0 18px;padding:18px 16px 21px;
+    border:1px solid rgba(255,255,255,.12);border-radius:18px;
+    background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.025));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 10px 24px rgba(0,0,0,.08);
   }
-  .lesson-page .hero{
-    overflow:hidden;
-    border-radius:0;
-    background:var(--modern-deep2);
+  .brand::after{
+    content:"";position:absolute;right:-45px;top:-55px;width:120px;height:120px;border-radius:50%;
+    background:radial-gradient(circle,rgba(240,198,61,.28),transparent 70%);pointer-events:none;
   }
-  .lesson-page .official-cover{display:block;width:100%;height:auto}
-  .support-access{
-    gap:10px;
-    flex-wrap:wrap;
-    padding:14px 16px;
-    border-bottom:1px solid #d8e7ee;
+  .brand small{display:block;color:#ffe58c;text-transform:uppercase;letter-spacing:.12em;font-weight:850;font-size:.67rem}
+  .brand h1{margin:7px 0;font-family:Georgia,serif;color:#fff;font-size:1.68rem;line-height:1.08}
+  .brand p{white-space:pre-line;margin:0;color:#d3e5ef;font-size:.86rem;line-height:1.45}
+
+  .search{margin:15px 1px 20px}
+  .search input{
+    width:100%;min-height:45px;padding:11px 12px;
+    border:1px solid rgba(255,255,255,.18);border-radius:13px;
+    background:rgba(255,255,255,.08);color:#fff;outline:none;
+  }
+  .search input::placeholder{color:rgba(255,255,255,.70)}
+  .search input:focus{outline:2px solid var(--gold);outline-offset:2px;background:rgba(255,255,255,.13)}
+
+  .nav-title{
+    display:flex;align-items:center;gap:8px;
+    margin:20px 6px 9px;color:#ffe58c;
+    text-transform:uppercase;letter-spacing:.15em;font-size:.68rem;font-weight:850
+  }
+  .nav-title::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.25),transparent)}
+  .nav{display:grid;gap:5px}
+  .nav a{
+    display:grid;grid-template-columns:36px minmax(0,1fr);gap:8px;align-items:start;
+    padding:9px 8px;border:1px solid transparent;border-radius:12px;
+    color:#e5f2f9;text-decoration:none;transition:.18s ease;
+  }
+  .nav a span{
+    display:grid;place-items:center;width:31px;min-height:31px;
+    border:1px solid rgba(255,255,255,.12);border-radius:8px;
+    background:rgba(255,255,255,.065);color:#ffe58c;font-weight:900;font-size:.74rem
+  }
+  .nav a b{font-size:.84rem;line-height:1.3}
+  .nav a:hover,.nav a.active{
+    transform:translateX(3px);background:rgba(255,255,255,.10);
+    border-color:rgba(255,255,255,.15);color:#fff;
+    box-shadow:inset 3px 0 0 var(--gold)
+  }
+  .nav a.prompts-nav{background:linear-gradient(135deg,rgba(240,198,61,.17),rgba(33,174,202,.10));border-color:rgba(255,255,255,.13)}
+  .nav a.prompts-nav span{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+
+  .main{min-width:0;padding:34px clamp(14px,2.6vw,40px) 70px}
+
+  .intro{
+    position:relative;overflow:hidden;
+    max-width:1180px;margin:0 auto 42px;padding:clamp(30px,4.2vw,50px);
+    border:1px solid rgba(255,255,255,.10);border-radius:28px;
     background:
-      linear-gradient(110deg,#edf8fc,#fffdf5);
+      radial-gradient(circle at 82% 16%,rgba(240,198,61,.25),transparent 24%),
+      radial-gradient(circle at 97% 108%,rgba(33,174,202,.26),transparent 31%),
+      linear-gradient(125deg,var(--navy) 0%,var(--navy2) 58%,#176b9e 100%);
+    box-shadow:0 22px 58px rgba(18,59,117,.10);
   }
-  .support-link,.prompts-link{
-    min-height:43px;
-    border-radius:11px;
-    box-shadow:0 4px 12px rgba(13,47,95,.05);
-    transition:transform .16s ease,box-shadow .16s ease;
+  .intro::after{
+    content:"";position:absolute;right:-110px;top:-145px;width:310px;height:310px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.10);box-shadow:0 0 0 45px rgba(255,255,255,.022);pointer-events:none
   }
-  .support-link:hover,.prompts-link:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(13,47,95,.10)}
-  .support-link{
-    background:linear-gradient(135deg,#e9f7f1,#fff);
-    border:1px solid #bcdccc;
-    color:#245d49;
+  .intro>*{position:relative;z-index:1}
+  .intro-kicker{
+    display:inline-flex;align-items:center;padding:7px 12px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.10);
+    color:#ffe58c;text-transform:uppercase;letter-spacing:.12em;font-weight:900;font-size:.72rem
   }
-  .prompts-link{
-    background:linear-gradient(135deg,#fff7d9,#fff);
-    border:1px solid #e4ca70;
-    color:#5d4b08;
+  .intro h1{
+    max-width:800px;margin:17px 0 12px;color:#fff;
+    font-family:Georgia,serif;font-size:clamp(2.35rem,4.8vw,4rem);line-height:1;letter-spacing:-.035em;
+    text-shadow:0 3px 16px rgba(0,0,0,.18)
+  }
+  .intro>p{max-width:810px;margin:0 0 22px;color:#e5f3f8;font-size:1.04rem;line-height:1.65}
+  .badges{display:flex;gap:8px;flex-wrap:wrap}
+  .badges span{
+    min-height:35px;display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);color:#fff;font-size:.79rem;font-weight:750
   }
 
-  .lesson-page .body{padding:clamp(18px,3vw,34px)}
-  .guide{
-    position:relative;
-    overflow:hidden;
-    border-left:5px solid var(--modern-cyan);
-    border-radius:16px;
-    background:linear-gradient(135deg,#eef8fc,#fff);
-    box-shadow:0 8px 22px rgba(13,47,95,.05);
+  .prompts-cta{
+    margin-top:25px;display:flex;align-items:center;justify-content:space-between;gap:18px;
+    padding:18px 20px;border:1px solid #e2c766;border-radius:17px;
+    background:linear-gradient(135deg,#fff8dd,#f4e2a0);color:var(--navy);
+    text-decoration:none;box-shadow:0 14px 32px rgba(0,0,0,.15);transition:.18s ease
   }
-  .guide::after{
-    content:"";position:absolute;right:-55px;top:-65px;width:130px;height:130px;border-radius:50%;
-    background:rgba(41,182,212,.07);pointer-events:none;
+  .prompts-cta:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(0,0,0,.18)}
+  .prompts-cta-copy{display:flex;align-items:center;gap:13px;min-width:0}
+  .prompts-cta-icon{
+    display:grid;place-items:center;width:48px;height:48px;flex:0 0 48px;border-radius:14px;
+    background:linear-gradient(145deg,var(--navy),var(--navy2));color:#fff;font-size:1.25rem
   }
-  .guide h2{color:var(--modern-deep)}
-  .guide h3{color:#155b9a}
-  .guide dl > div{
-    border-color:#d7e6ef;
-    border-radius:11px;
-    background:#fff;
-  }
-  .guide dt{color:#13558d}
+  .prompts-cta strong{display:block;color:var(--navy);font-size:1.02rem;line-height:1.2}
+  .prompts-cta small{display:block;margin-top:4px;color:#59666d;font-weight:650;line-height:1.35}
+  .prompts-cta-arrow{color:#d89a2b;font-size:1.3rem;font-weight:900}
 
-  .valuables{gap:14px}
-  .valuables section{
-    border:1px solid #d9e6ec;
-    border-radius:15px;
-    box-shadow:0 7px 18px rgba(13,47,95,.05);
+  .class-links-panel{
+    margin-top:17px;padding:17px;border:1px solid rgba(255,255,255,.15);border-radius:17px;
+    background:rgba(0,0,0,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.035)
   }
-  .valuables section:first-child{
-    border-left:5px solid var(--modern-yellow);
-    background:linear-gradient(135deg,#fff8da,#fff);
+  .class-links-panel h2{margin:0 0 4px;color:#fff;font:800 1.05rem/1.2 Inter,system-ui,sans-serif}
+  .class-links-panel p{margin:0 0 13px;color:#e5f3f8;font-size:.86rem}
+  .class-links-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .class-link{
+    position:relative;display:flex;align-items:center;justify-content:flex-start;
+    min-height:60px;padding:11px 13px 11px 53px;border:1px solid rgba(255,255,255,.15);
+    border-radius:13px;background:rgba(255,255,255,.085);color:#fff;text-decoration:none;
+    font-size:.87rem;font-weight:850;line-height:1.25;transition:.16s ease
   }
-  .valuables section:last-child{
-    border-left:5px solid var(--modern-cyan);
-    background:linear-gradient(135deg,#eaf8fb,#fff);
+  .class-link::before{
+    content:attr(data-class-icon);position:absolute;left:12px;top:50%;transform:translateY(-50%);
+    width:31px;height:31px;display:grid;place-items:center;border-radius:9px;
+    background:rgba(255,255,255,.10);color:#ffe58c;font-size:.72rem;font-weight:900
   }
-  .valuables h2{color:var(--modern-deep)}
+  .class-link:hover{transform:translateY(-2px);background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.25)}
 
-  .section{
-    border-radius:15px;
-    padding:clamp(16px,2vw,22px);
-    background:#fff;
-    border:1px solid rgba(214,230,239,.78);
-    box-shadow:0 5px 16px rgba(13,47,95,.035);
+  .lesson{
+    max-width:1180px;margin:0 auto 68px;scroll-margin-top:20px
   }
-  .section + .section{margin-top:16px}
-  .section-heading{
-    color:var(--modern-deep);
-    border-bottom:1px solid #d8e5ec;
-    position:relative;
-    padding-bottom:8px;
+  .hero{
+    position:relative;overflow:hidden;border-radius:23px 23px 0 0;
+    background:var(--navy);box-shadow:0 20px 48px rgba(18,59,117,.10)
   }
+  .hero img,.hero .cover,.hero .official-cover{
+    display:block;width:100%;height:auto;max-height:none;object-fit:contain
+  }
+  .shell{
+    background:linear-gradient(180deg,#edf8fc 0,#fffefd 220px);
+    border:1px solid var(--line);border-top:5px solid var(--gold);
+    border-radius:0 0 23px 23px;padding:29px clamp(19px,3vw,36px) 40px;
+    box-shadow:0 20px 48px rgba(18,59,117,.10)
+  }
+
+  .lesson-actions,.support-access,.acoes-licao{
+    display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap;
+    margin:0 0 27px;padding:14px 15px;border:1px solid var(--line);
+    border-left:5px solid var(--gold);border-radius:14px;
+    background:linear-gradient(115deg,#eef8fb,#fff);
+    box-shadow:0 7px 20px rgba(18,59,117,.10)
+  }
+  .lesson-actions-label,.rotulo-acoes{
+    margin-right:auto;color:var(--navy);font-size:.74rem;font-weight:850;text-transform:uppercase;letter-spacing:.10em
+  }
+  .lesson-action,.support-link,.prompts-link,.acao-licao{
+    appearance:none;min-height:43px;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:10px 14px;border:1px solid transparent;border-radius:11px;
+    font:850 .88rem/1.25 Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer;transition:.16s ease
+  }
+  .lesson-action:hover,.support-link:hover,.prompts-link:hover,.acao-licao:hover{transform:translateY(-2px)}
+  .lesson-action.copy,.acao-licao.copiar{background:#edf7f2;color:#2f6a57;border-color:#c6dfd2}
+  .lesson-action.print,.acao-licao.imprimir{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .lesson-action.support,.support-link{background:#edf8f3;color:#2b654f;border-color:#bedccd}
+  .lesson-action.prompts,.prompts-link,.acao-licao.prompts{background:#fff8dd;color:#5f4d0a;border-color:#e3ca6e}
+
+  .key-grid,.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:15px}
+  .card,.guide,.valuables section,.lesson-source .field,.lesson-source .base,.section,.answers{
+    border:1px solid var(--line);border-radius:15px;background:#fff;
+    box-shadow:0 7px 20px rgba(18,59,117,.10)
+  }
+  .card{padding:19px 20px}
+  .card h3,.guide h2,.guide h3,.valuables h2,.section-heading,.lesson-source h2,.lesson-source h3,.answers h2{color:var(--navy)}
+  .key.aureo,.valuables section:first-child,.lesson-source .verse{
+    border-left:5px solid var(--gold);background:linear-gradient(135deg,#fff8df,#fff)
+  }
+  .key.verdade,.valuables section:last-child{
+    border-left:5px solid var(--accent);background:linear-gradient(135deg,#eaf8fb,#fff)
+  }
+
+  .details{
+    overflow:hidden;margin:14px 0;border:1px solid var(--line);border-radius:14px;background:#fff;
+    box-shadow:0 4px 13px rgba(18,59,117,.10)
+  }
+  .details summary{
+    position:relative;cursor:pointer;padding:14px 43px 14px 17px;background:linear-gradient(90deg,#edf8fc,#fff);
+    color:var(--navy);font-weight:850
+  }
+  .details summary::after{
+    content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);
+    width:25px;height:25px;display:grid;place-items:center;border-radius:50%;
+    color:var(--navy);background:#eaf8fb;font-weight:900
+  }
+  .details[open] summary::after{content:"–"}
+  .details-content{padding:18px 20px}
+
+  .reading,.lesson-source{
+    max-width:890px;margin:36px auto 0;font-family:Georgia,"Times New Roman",serif;
+    font-size:1.055rem;line-height:1.88;color:var(--ink)
+  }
+  .reading p,.lesson-source p{margin:0 0 1.12em}
+  .reading h3,.lesson-source>section>h3{
+    position:relative;color:var(--navy);padding-bottom:.42em;border-bottom:1px solid var(--line)
+  }
+  .reading h3::after,.lesson-source>section>h3::after{
+    content:"";position:absolute;left:0;bottom:-2px;width:74px;height:4px;border-radius:99px;
+    background:linear-gradient(90deg,var(--accent),var(--gold))
+  }
+  .reading h4{color:var(--navy)}
+
+  .introduction,.comment,.focus,.supplement,.taught,.conclusion,.point{
+    border-radius:15px;padding:18px 21px;margin:21px 0;box-shadow:0 8px 22px rgba(18,59,117,.10)
+  }
+  .introduction,.guide,.lesson-source .field{
+    border-left:5px solid var(--accent);background:linear-gradient(135deg,#eaf8fb,#fff)
+  }
+  .point,.focus,.lesson-source .complement{
+    border:1px solid #e5cf84;border-left:5px solid var(--gold);background:linear-gradient(135deg,#fff8df,#fff)
+  }
+  .comment{background:#f3f6f8;border-left:5px solid #7890a3}
+  .taught,.lesson-source .activity{background:#edf7f2;border-left:5px solid #4c8a70}
+  .conclusion,.lesson-source .conclusion{
+    position:relative;overflow:hidden;color:#fff;
+    background:radial-gradient(circle at 94% 12%,rgba(33,174,202,.28),transparent 25%),linear-gradient(135deg,var(--navy),var(--navy2))
+  }
+  .conclusion h3,.conclusion p,.lesson-source .conclusion h3,.lesson-source .conclusion p{color:#fff}
+
+  .guide{padding:20px}
+  .guide dl{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .guide dl>div{padding:13px 14px;border:1px solid var(--line);border-radius:11px;background:#fff}
+  .guide dt{font-weight:900;color:var(--navy);font-size:.75rem;letter-spacing:.06em}
+  .guide dd{margin:5px 0 0}
+  .valuables{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+  .valuables section{padding:18px 19px}
+  .section{padding:18px 20px;margin:16px 0}
+  .section-heading{position:relative;padding-bottom:8px}
   .section-heading::after{
     content:"";position:absolute;left:0;bottom:-2px;width:72px;height:4px;border-radius:99px;
-    background:linear-gradient(90deg,var(--modern-blue),var(--modern-cyan));
+    background:linear-gradient(90deg,var(--accent),var(--gold))
+  }
+  .answers{padding:18px 20px;border-left:5px solid var(--gold)}
+
+  .lesson-source{max-width:none;margin-top:0}
+  .lesson-source>h2{
+    margin:0 0 16px;padding:14px 17px;border-left:6px solid var(--gold);border-radius:0 12px 12px 0;
+    background:linear-gradient(90deg,#fff8df,#fff);font-family:Inter,system-ui,sans-serif
+  }
+  .lesson-source .base,.lesson-source .field,.lesson-source>section:not(.field):not(.base){
+    padding:18px 20px;margin:14px 0
+  }
+  .lesson-source blockquote{margin:10px 0;font-style:italic}
+
+  .lesson-toolbar{margin:-8px 0 18px}
+  .lesson-toolbar a{color:var(--muted);text-decoration:none;font-size:.82rem}
+
+  .lesson-navigation{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+  .lesson-navigation a,.next{
+    display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;
+    border-radius:12px;background:var(--navy);color:#fff;text-decoration:none;font-weight:850;
+    box-shadow:0 7px 17px rgba(18,59,117,.10)
   }
 
-  .answers{
-    border:1px solid #d8e4ec;
-    border-left:5px solid var(--modern-yellow);
-    border-radius:14px;
-    background:linear-gradient(135deg,#fff9e5,#fff);
-    box-shadow:0 6px 18px rgba(13,47,95,.04);
+  .lesson-pdf-footer{
+    margin:26px 0 18px;padding:20px;border:1px solid var(--line);border-top:4px solid var(--gold);
+    border-radius:15px;background:linear-gradient(135deg,#fff8df,#fff);box-shadow:0 9px 23px rgba(18,59,117,.10)
   }
-  .answers h2{color:var(--modern-deep)}
+  .lesson-pdf-footer h3{margin:0 0 6px;color:var(--navy)}
+  .lesson-pdf-footer .lesson-pdf-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .lesson-pdf-footer .lesson-pdf-options>*{
+    display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:11px 14px;
+    border:1px solid #e5cf84;border-radius:10px;text-decoration:none;text-align:center;
+    font-weight:800;font-family:inherit
+  }
+  .lesson-pdf-footer .pdf-print{background:var(--navy);border-color:var(--navy);color:#fff}
+  .lesson-pdf-footer .pdf-a4{background:#fff;color:var(--navy)}
+  .lesson-pdf-footer .pdf-mobile{background:#edf7f2;color:#2f6a57;border-color:#b9d7c7}
+  .lesson-pdf-footer .pdf-auto{background:#fff8df;color:var(--navy)}
+  .lesson-pdf-footer .pdf-auto svg{
+    width:20px!important;height:20px!important;min-width:20px;max-width:20px;min-height:20px;max-height:20px;flex:0 0 20px
+  }
 
-  a:focus-visible,button:focus-visible,input:focus-visible{
-    outline:3px solid rgba(240,198,61,.62);outline-offset:3px;
+  .menu{
+    display:none;position:fixed;left:13px;top:13px;z-index:110;border:0;border-radius:999px;
+    background:var(--navy);color:#fff;padding:11px 15px;font-weight:850;box-shadow:0 7px 18px rgba(18,59,117,.10)
+  }
+  .overlay{display:none}
+  .overlay.show{display:block;position:fixed;inset:0;background:rgba(0,0,0,.42);z-index:80}
+  .top{
+    position:fixed;right:17px;bottom:17px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+    background:linear-gradient(145deg,var(--gold),#d89a2b);color:var(--navy);text-decoration:none;font-weight:900;
+    box-shadow:0 9px 22px rgba(18,59,117,.10);z-index:45
   }
 
-  @media(max-width:900px){
-    .layout{padding:18px 10px 46px}
-    .sidebar{border-radius:15px}
+  a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{
+    outline:3px solid rgba(240,198,61,.60);outline-offset:3px
   }
+
+  @media(max-width:980px){
+    .app{display:block}
+    .menu{display:block}
+    .sidebar{
+      position:fixed;left:0;top:0;width:min(88vw,340px);
+      transform:translateX(-105%);transition:.25s;box-shadow:var(--shadow)
+    }
+    .sidebar.open{transform:translateX(0)}
+    .main{padding:70px 12px 38px}
+    .intro{margin-bottom:31px}
+    .lesson{margin-bottom:56px}
+    .key-grid,.info-grid,.guide dl,.valuables{grid-template-columns:1fr}
+  }
+
+  @media(max-width:760px){.class-links-grid{grid-template-columns:1fr}}
+
   @media(max-width:620px){
-    .sitehead{padding:15px 12px}
-    .lesson-page{border-radius:17px;margin-bottom:48px}
-    .support-access{align-items:stretch}
-    .support-link,.prompts-link{flex:1 1 100%;justify-content:center}
-    .lesson-page .body{padding:15px 13px 24px}
-    .guide,.valuables section,.section,.answers{border-radius:12px}
+    .intro{padding:25px 18px 23px;border-radius:20px}
+    .intro h1{font-size:clamp(2.1rem,10vw,2.85rem)}
+    .intro>p{font-size:.96rem;line-height:1.58}
+    .prompts-cta{padding:14px;border-radius:14px}
+    .prompts-cta-icon{width:41px;height:41px;flex-basis:41px}
+    .class-links-panel{padding:14px}
+    .lesson{margin-bottom:48px}
+    .hero{border-radius:17px 17px 0 0}
+    .shell{padding:20px 14px 30px;border-radius:0 0 17px 17px}
+    .lesson-actions,.support-access,.acoes-licao{align-items:stretch;padding:12px}
+    .lesson-actions-label,.rotulo-acoes{width:100%;margin:0 0 2px}
+    .lesson-action,.support-link,.prompts-link,.acao-licao{flex:1 1 100%;min-height:47px}
+    .reading,.lesson-source{font-size:1rem;line-height:1.74}
+    .lesson-pdf-footer{padding:15px 12px}
+    .lesson-pdf-footer .lesson-pdf-options{grid-template-columns:1fr}
+    .lesson-navigation{grid-template-columns:1fr}
   }
 }
 
-</style>
-</head>
-<body>
-<a class="skip" href="#conteudo">Ir para a lição</a>
-<header class="sitehead"><div class="brand"><img alt="EBD Fiel — Fiel à Palavra!" class="brand-logo" height="1080" src="assets/logo-ebd-fiel.png" width="1080"/><small>Pré-adolescentes · 12 a 14 anos · Adolescer+ · Revista do Professor</small></div></header>
-<div class="layout">
-<nav aria-label="Índice das lições" class="sidebar">
-<h2>Adolescendo com Propósito</h2><p>4º trimestre de 2026 · Editora Betel. Versão de revisão; selecione uma lição. A pesquisa abrange todas as 13.</p>
-<ol id="lesson-index">
-<li><a aria-current="page" class="active" data-lesson="1" href="#licao-01">Você Tem um Propósito</a> <span class="pages">p. 7–10</span></li>
-<li><a class="" data-lesson="2" href="#licao-02">Conhecendo a Deus</a> <span class="pages">p. 11–14</span></li>
-<li><a class="" data-lesson="3" href="#licao-03">Santificando-se em Tudo</a> <span class="pages">p. 15–18</span></li>
-<li><a class="" data-lesson="4" href="#licao-04">Orando sem Cessar</a> <span class="pages">p. 19–22</span></li>
-<li><a class="" data-lesson="5" href="#licao-05">Entregando Dízimos e Ofertas</a> <span class="pages">p. 23–26</span></li>
-<li><a class="" data-lesson="6" href="#licao-06">Amando a Família</a> <span class="pages">p. 27–30</span></li>
-<li><a class="" data-lesson="7" href="#licao-07">Preparando-se para o Futuro</a> <span class="pages">p. 31–34</span></li>
-<li><a class="" data-lesson="8" href="#licao-08">Fazendo a Obra de Deus</a> <span class="pages">p. 35–38</span></li>
-<li><a class="" data-lesson="9" href="#licao-09">Compreendendo o Propósito do Namoro</a> <span class="pages">p. 39–42</span></li>
-<li><a class="" data-lesson="10" href="#licao-10">Perdão, um Propósito Libertador</a> <span class="pages">p. 43–46</span></li>
-<li><a class="" data-lesson="11" href="#licao-11">Crescendo em Meio à Dor</a> <span class="pages">p. 47–50</span></li>
-<li><a class="" data-lesson="12" href="#licao-12">Adorando e Louvando a Deus</a> <span class="pages">p. 51–54</span></li>
-<li><a class="" data-lesson="13" href="#licao-13">Honrando a Deus em Tudo</a> <span class="pages">p. 55–58</span></li>
-</ol>
-</nav>
-<main id="conteudo">
-<form class="toolbar" id="search-form" role="search"><label for="search">Pesquisar nas 13 lições</label><input autocomplete="off" id="search" placeholder="Palavra, expressão ou referência bíblica" type="search"/><button type="submit">Pesquisar</button><button class="secondary" id="clear-search" type="button">Limpar</button><button id="print" type="button">Imprimir lição atual</button><div aria-live="polite" id="search-status" role="status">Selecione uma lição ou pesquise uma palavra, expressão ou referência bíblica em todas as 13 lições.</div></form><div aria-live="polite" class="search-results" id="search-results"></div>
-<article aria-label="Lição 1 — Você Tem um Propósito" aria-labelledby="l01-titulo-licao" class="lesson-page" data-lesson="1" data-source-pages="7-10" id="licao-01">
-<header class="hero"><img alt="Capa oficial da Lição 1 da revista Adolescer+: relógio, título Você Tem um Propósito e Texto Bíblico Pv 19.21; Jó 17.11." class="official-cover" decoding="async" height="1040" src="assets/capa-licao-01.png" width="2032"/><div class="visually-hidden"><p>Lição 1 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l01-titulo-licao">VOCÊ TEM UM PROPÓSITO</h1><p>Texto Bíblico: Pv 19.21; Jó 17.11</p></div></header>
-<div aria-label="Material complementar da Lição 1" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 1 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-01-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 01</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 1 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-1" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l01-texto-original">
+@media print{
+  .sidebar,.menu,.overlay,.top,.class-links-panel,.prompts-cta{display:none!important}
+}
+</style><style id="compat-pre">
+@media screen{
+  .lesson-page .body{padding:0}
+  .lesson-page .hero{aspect-ratio:auto}
+  .lesson-page .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important}
+  .support-lesson{font-weight:700}
+}
+</style></head>
+<body id="topo"><button aria-controls="sidebar" aria-expanded="false" class="menu">☰ Índice</button><div class="overlay"></div>
+
+
+
+
+<div class="app"><aside class="sidebar" id="sidebar"><div class="brand"><small>Revista de Escola Bíblica Dominical</small><h1>Adolescer+</h1><p>4º Trimestre de 2026
+Adolescendo com Propósito</p></div><div class="search"><input aria-label="Buscar uma lição" id="search" placeholder="Buscar lição ou tema..." type="search"/></div><div class="nav-title">Ferramentas</div><nav class="nav nav-tools"><a class="prompts-nav" href="prompts-pre-adolescentes-4t-2026.html"><span>✦</span><b>Prompts EBD Fiel — 13 lições</b></a></nav><div class="nav-title">Outras classes</div><nav class="nav nav-other-classes"><a href="https://ebdfiel.github.io/ebd-fiel-adultos-4t-2026/" rel="noopener noreferrer" target="_blank"><span>A</span><b>Adultos</b></a><a href="https://ebdfiel.github.io/ebd-fiel-jovens-4t-2026/" rel="noopener noreferrer" target="_blank"><span>J</span><b>Jovens</b></a><a href="https://ebdfiel.github.io/adolescentes-4trimestre-2026/" rel="noopener noreferrer" target="_blank"><span>15+</span><b>Adolescentes — 15 a 17 anos</b></a></nav><div class="nav-title">Índice das lições</div><nav class="nav lesson-nav"><a data-nav="licao-01" href="#licao-01"><span>01</span><b>Você Tem um Propósito</b></a><a data-nav="licao-02" href="#licao-02"><span>02</span><b>Conhecendo a Deus</b></a><a data-nav="licao-03" href="#licao-03"><span>03</span><b>Santificando-se em Tudo</b></a><a data-nav="licao-04" href="#licao-04"><span>04</span><b>Orando sem Cessar</b></a><a data-nav="licao-05" href="#licao-05"><span>05</span><b>Entregando Dízimos e Ofertas</b></a><a data-nav="licao-06" href="#licao-06"><span>06</span><b>Amando a Família</b></a><a data-nav="licao-07" href="#licao-07"><span>07</span><b>Preparando-se para o Futuro</b></a><a data-nav="licao-08" href="#licao-08"><span>08</span><b>Fazendo a Obra de Deus</b></a><a data-nav="licao-09" href="#licao-09"><span>09</span><b>Compreendendo o Propósito do Namoro</b></a><a data-nav="licao-10" href="#licao-10"><span>10</span><b>Perdão, um Propósito Libertador</b></a><a data-nav="licao-11" href="#licao-11"><span>11</span><b>Crescendo em Meio à Dor</b></a><a data-nav="licao-12" href="#licao-12"><span>12</span><b>Adorando e Louvando a Deus</b></a><a data-nav="licao-13" href="#licao-13"><span>13</span><b>Honrando a Deus em Tudo</b></a></nav></aside><main class="main"><header class="intro" id="inicio"><div class="intro-kicker">Pré-adolescentes — 12 a 14 anos • 4º Trimestre de 2026</div><h1>Adolescendo com Propósito</h1><p>Conteúdo da Revista Adolescer+ organizado para leitura, estudo e apoio ao professor, preservando as 13 lições do 4º trimestre de 2026.</p><div class="badges"><span>Pré-adolescentes — 12 a 14 anos</span><span>4º Trimestre de 2026</span><span>13 lições</span><span>EBD Fiel</span></div><a aria-label="Acessar os Prompts EBD Fiel das 13 lições" class="prompts-cta" href="prompts-pre-adolescentes-4t-2026.html"><span class="prompts-cta-copy"><span aria-hidden="true" class="prompts-cta-icon">✦</span><span><strong>Prompts EBD Fiel — Pré-adolescentes — 12 a 14 anos</strong><small>Acesse os prompts organizados das 13 lições, com blocos prontos para copiar.</small></span></span><span aria-hidden="true" class="prompts-cta-arrow">→</span></a><section aria-label="Acessos às outras classes" class="class-links-panel"><h2>Outras classes — 4º Trimestre de 2026</h2><p>Acesse também os materiais EBD Fiel das demais classes.</p><div class="class-links-grid"><a class="class-link" data-class-icon="A" href="https://ebdfiel.github.io/ebd-fiel-adultos-4t-2026/" rel="noopener noreferrer" target="_blank">Adultos</a><a class="class-link" data-class-icon="J" href="https://ebdfiel.github.io/ebd-fiel-jovens-4t-2026/" rel="noopener noreferrer" target="_blank">Jovens</a><a class="class-link" data-class-icon="15+" href="https://ebdfiel.github.io/adolescentes-4trimestre-2026/" rel="noopener noreferrer" target="_blank">Adolescentes — 15 a 17 anos</a></div></section></header><article aria-label="Lição 1 — Você Tem um Propósito" aria-labelledby="l01-titulo-licao" class="lesson-page lesson" data-lesson="1" data-source-pages="7-10" id="licao-01">
+<header class="hero"><img alt="Capa oficial da Lição 1 da revista Adolescer+: relógio, título Você Tem um Propósito e Texto Bíblico Pv 19.21; Jó 17.11." class="official-cover" decoding="async" height="1040" src="assets/capa-licao-01.png" width="2032"/><div class="visually-hidden"><p>Lição 1 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l01-titulo-licao">VOCÊ TEM UM PROPÓSITO</h1><p>Texto Bíblico: Pv 19.21; Jó 17.11</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 1" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 1 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-01-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 01</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 1 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-1" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l01-texto-original">
 <section aria-labelledby="l01-comecando" class="guide" data-source-pages="7">
 <h2 id="l01-comecando">Começando a Aula</h2>
 <dl>
@@ -353,11 +484,11 @@
 <p>Descobrir o propósito de Deus para a nossa vida não é algo fácil, principalmente na adolescência. Tanto José quanto Moisés não tinham noção do seu propósito, o que foi revelado por Deus de maneira gradual na caminhada. Ambos mantiveram a fidelidade e o temor, o que foi fundamental para o cumprimento da vontade de Deus em suas vidas.</p>
 </section>
 <section aria-labelledby="l01-respostas" class="answers" data-source-pages="10"><h2 id="l01-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) C, E, C, C, C</p></section>
-</div>
-</article><article aria-label="Lição 2 — Conhecendo a Deus" aria-labelledby="l02-titulo-licao" class="lesson-page" data-lesson="2" data-source-pages="11-14" hidden="" id="licao-02">
-<header class="hero"><img alt="Capa oficial da Lição 2 — Conhecendo a Deus, extraída da página 12 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1053" src="assets/capa-licao-02.png" width="2024"/><div class="visually-hidden"><p>Lição 2 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l02-titulo-licao">CONHECENDO A DEUS</h1><p>Texto Bíblico: Jo 10.14; Sl 25.4,5</p></div></header>
-<div aria-label="Material complementar da Lição 2" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 2 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-02-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 02</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 2 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-2" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l02-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 2 — Conhecendo a Deus" aria-labelledby="l02-titulo-licao" class="lesson-page lesson" data-lesson="2" data-source-pages="11-14" id="licao-02">
+<header class="hero"><img alt="Capa oficial da Lição 2 — Conhecendo a Deus, extraída da página 12 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1053" src="assets/capa-licao-02.png" width="2024"/><div class="visually-hidden"><p>Lição 2 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l02-titulo-licao">CONHECENDO A DEUS</h1><p>Texto Bíblico: Jo 10.14; Sl 25.4,5</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 2" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 2 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-02-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 02</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 2 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-2" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l02-texto-original">
 <section aria-labelledby="l02-comecando" class="guide" data-source-pages="11">
 <h2 id="l02-comecando">Começando a Aula</h2>
 <dl><div><dt>OBJETIVO</dt><dd>Entender a importância de buscar intimidade com Deus, para ter uma caminhada cristã sólida.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Jo 10.14; Sl 25.4,5</dd></div></dl>
@@ -399,11 +530,11 @@
 <p>Para conhecer a Deus é preciso buscá-lO de muitas maneiras. Essa busca deve ser acompanhada pela leitura sistemática da Bíblia, pela prática do jejum e da oração. Conhecer ao Senhor é desenvolver um relacionamento íntimo com Ele, em um processo gradual e inesgotável, que conduz a uma experiência pessoal, profunda e transformadora.</p>
 </section>
 <section aria-labelledby="l02-respostas" class="answers" data-source-pages="14"><h2 id="l02-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) A) experiência<br/>B) Bíblia<br/>C) intimidade<br/>D) tudo/ amável/ boa fama/ louvor</p></section>
-</div>
-</article><article aria-label="Lição 3 — Santificando-se em Tudo" aria-labelledby="l03-titulo-licao" class="lesson-page" data-lesson="3" data-source-pages="15-18" hidden="" id="licao-03">
-<header class="hero"><img alt="Capa oficial da Lição 3 — Santificando-se em Tudo, extraída da página 16 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1050" src="assets/capa-licao-03.png" width="2008"/><div class="visually-hidden"><p>Lição 3 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l03-titulo-licao">SANTIFICANDO-SE EM TUDO</h1><p>Texto Bíblico: 1Pe 1.13-16; Ef 4.22-24</p></div></header>
-<div aria-label="Material complementar da Lição 3" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 3 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-03-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 03</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 3 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-3" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l03-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 3 — Santificando-se em Tudo" aria-labelledby="l03-titulo-licao" class="lesson-page lesson" data-lesson="3" data-source-pages="15-18" id="licao-03">
+<header class="hero"><img alt="Capa oficial da Lição 3 — Santificando-se em Tudo, extraída da página 16 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1050" src="assets/capa-licao-03.png" width="2008"/><div class="visually-hidden"><p>Lição 3 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l03-titulo-licao">SANTIFICANDO-SE EM TUDO</h1><p>Texto Bíblico: 1Pe 1.13-16; Ef 4.22-24</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 3" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 3 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-03-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 03</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 3 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-3" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l03-texto-original">
 <section aria-labelledby="l03-comecando" class="guide" data-source-pages="15"><h2 id="l03-comecando">Começando a Aula</h2>
 <dl><div><dt>OBJETIVO</dt><dd>Entender que o cristão deve ser santo, porque Deus é Santo.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>1Pe 1.13-16; Ef 4.22-24</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Separe três copos de vidro, água, iodo e cloro.</p><p>Encha todos os copos até a metade; porém, no primeiro (que representará a humanidade), coloque a água; no segundo (que representará o pecado), coloque o iodo e no terceiro (que representará Jesus), coloque o cloro.</p><p>Explique aos alunos que Deus nos fez puros como a água do primeiro copo. Derrame um pouco do iodo na água, enquanto explica que o pecado nos contamina, tornando-nos sujos (mostre a água com iodo).</p><p>Para finalizar, derrame um pouco do cloro, na água escura com iodo e ela ficará clara novamente. Nesse momento, enfatize que o pecado nos contamina, mas o Sangue de Jesus nos purifica.</p><p>Ressalte sobre a importância de vivermos unidos a Cristo, buscando nEle uma vida de santidade, longe do pecado.</p>
@@ -429,11 +560,11 @@
 <p>Nem sempre os pais ou outros cristãos estarão por perto para orientar o adolescente em suas decisões. Daniel e seus amigos estavam sozinhos, em uma terra ímpia, mas mantiveram firme sua fidelidade a Deus. Isso é uma questão de escolha!</p></section>
 <section class="section" data-source-pages="18"><h2 class="section-heading">CONCLUINDO</h2><p>O cristão deve ser santo, porque Deus é Santo (1Pe 1.16). Viver em santidade não significa se isolar, ser intolerante ou julgar-se superior às pessoas, mas reconhecer as próprias limitações, sabendo que “se andarmos na luz, como ele na luz está, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado”, 1Jo 1.7.</p></section>
 <section aria-labelledby="l03-respostas" class="answers" data-source-pages="18"><h2 id="l03-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) Separação do pecado.<br/>2) impureza, inveja, santidade, perdão, Salvação.</p></section>
-</div>
-</article><article aria-label="Lição 4 — Orando sem Cessar" aria-labelledby="l04-titulo-licao" class="lesson-page" data-lesson="4" data-source-pages="19-22" hidden="" id="licao-04">
-<header class="hero"><img alt="Capa oficial da Lição 4 — Orando sem Cessar, extraída da página 20 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1078" src="assets/capa-licao-04.png" width="1952"/><div class="visually-hidden"><p>Lição 4 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l04-titulo-licao">ORANDO SEM CESSAR</h1><p>Texto Bíblico: Ef 6.18; 1Ts 5.17</p></div></header>
-<div aria-label="Material complementar da Lição 4" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 4 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-04-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 04</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 4 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-4" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l04-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 4 — Orando sem Cessar" aria-labelledby="l04-titulo-licao" class="lesson-page lesson" data-lesson="4" data-source-pages="19-22" id="licao-04">
+<header class="hero"><img alt="Capa oficial da Lição 4 — Orando sem Cessar, extraída da página 20 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1078" src="assets/capa-licao-04.png" width="1952"/><div class="visually-hidden"><p>Lição 4 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l04-titulo-licao">ORANDO SEM CESSAR</h1><p>Texto Bíblico: Ef 6.18; 1Ts 5.17</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 4" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 4 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-04-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 04</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 4 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-4" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l04-texto-original">
 <section aria-labelledby="l04-comecando" class="guide" data-source-pages="19"><h2 id="l04-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que a oração nos leva a uma vida de intimidade com Deus.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Ef 6.18; 1Ts 5.17</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Providencie: 3 embalagens de comprimidos efervescentes e 3 copos com água sobre a mesa. Peça a atenção da turma. Coloque uma embalagem com comprimido ao lado do primeiro copo com água. Coloque dentro do segundo copo um comprimido embalado, e no terceiro copo com água, coloque um comprimido desembalado. Peça que a turma diga o que observaram.</p><p>Ressalte que assim somos nós quando não buscamos a Deus em oração, não há interação. Diga que quando oramos com incredulidade, somos como o segundo copo, cuja água não se envolve com o comprimido que está embalado. Mas, quando oramos e cremos no poder do Senhor, usamos a fé, e assim somos como o terceiro copo, totalmente envolvidos por Deus.</p>
 <h3>INTRODUÇÃO</h3><p>A oração é uma das armas do cristão para enfrentar as dificuldades, agradecer pelas bênçãos recebidas, buscar a direção acerca de alguma atitude a ser tomada e muitas outras coisas. A oração é o caminho que tem ligação direta com o Pai, assim como Jesus nos ensinou (Mt 6.5-13). A Bíblia orienta a cultivarmos uma vida de oração (1Ts 5.17).</p>
@@ -457,11 +588,11 @@
 <p>Peça aos adolescentes que orem uns pelos outros durante a semana. Você pode escrever o nome de cada um deles em tiras de papel e fazer um sorteio. Cada um deverá orar por quem tirou no sorteio.</p></section>
 <section class="section" data-source-pages="22"><h2 class="section-heading">CONCLUINDO</h2><p>A oração deve ser uma prática constante na vida cristã, porque Cristo, assim nos mandou fazer (Mc 14.38). Além de orar por si mesmo, o crente deve orar também pelas necessidades dos outros. A oração intercessória, em favor do próximo, é uma ordem de Deus (Tg 5.16), que nos manda orar até mesmo por nossos inimigos (Mt 5.44; Lc 6.28). A oração não é um ato egoísta, mas de inclusão do outro, a exemplo de Jesus que intercedeu pelos discípulos e pelas pessoas que ainda seriam salvas (Jo 17.6-26).</p></section>
 <section aria-labelledby="l04-respostas" class="answers" data-source-pages="22"><h2 id="l04-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) A) Moisés – súplica para entrar em Canaã.<br/>B) Davi – intercessão por cura.<br/>C) Jesus – livramento do sofrimento e submissão a Deus.<br/>D) Paulo – livramento do sofrimento.</p></section>
-</div>
-</article><article aria-label="Lição 5 — Entregando Dízimos e Ofertas" aria-labelledby="l05-titulo-licao" class="lesson-page" data-lesson="5" data-source-pages="23-26" hidden="" id="licao-05">
-<header class="hero"><img alt="Capa oficial da Lição 5 — Entregando Dízimos e Ofertas, extraída da página 24 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1053" src="assets/capa-licao-05.png" width="1992"/><div class="visually-hidden"><p>Lição 5 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l05-titulo-licao">ENTREGANDO DÍZIMOS E OFERTAS</h1><p>Texto Bíblico: Gn 14.20; Ml 3.10,11</p></div></header>
-<div aria-label="Material complementar da Lição 5" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 5 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-05-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 05</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 5 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-5" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l05-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 5 — Entregando Dízimos e Ofertas" aria-labelledby="l05-titulo-licao" class="lesson-page lesson" data-lesson="5" data-source-pages="23-26" id="licao-05">
+<header class="hero"><img alt="Capa oficial da Lição 5 — Entregando Dízimos e Ofertas, extraída da página 24 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1053" src="assets/capa-licao-05.png" width="1992"/><div class="visually-hidden"><p>Lição 5 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l05-titulo-licao">ENTREGANDO DÍZIMOS E OFERTAS</h1><p>Texto Bíblico: Gn 14.20; Ml 3.10,11</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 5" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 5 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-05-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 05</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 5 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-5" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l05-texto-original">
 <section aria-labelledby="l05-comecando" class="guide" data-source-pages="23"><h2 id="l05-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender o propósito dos dízimos e das ofertas.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Gn 14.20; Ml 3.10,11.</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Pergunte aos alunos o que significa a palavra “dízimo”. Ouça as respostas com atenção e faça as observações que julgar necessárias. Peça a um aluno que desenhe no quadro um círculo ou uma pizza dividida em dez partes. Marque um dos pedaços com vários riscos. Explique aos adolescentes que o desenho completo representa toda a nossa renda, da qual devemos retirar a décima parte, que é a fatia riscada, e devolvê-la a Deus. O dízimo é uma forma de reconhecer que tudo o que temos e ganhamos é pela bondade de Deus em nossas vidas, e não pela força do nosso braço. Ou seja; dizimar é uma expressão de fé e gratidão a Deus por Sua providência. Leiam Malaquias 3.10.</p>
 <h3>INTRODUÇÃO</h3><p>Faça o “Preparando a lição” e inicie a aula explicando que o ato de dizimar e ofertar na Casa de Deus é um princípio de honrar a Deus (Pv 3.9,10) e obediência à Sua Palavra (2Co 9.7).</p>
@@ -485,11 +616,11 @@
 <p>Leia Mc 12.41-44 com a turma. Ressalte que a viúva pobre chamou a atenção de Jesus não pelo valor da sua oferta, mas pela atitude do seu coração.</p></section>
 <section class="section" data-source-pages="26"><h2 class="section-heading">CONCLUINDO</h2><p>Entregar dízimos e ofertas é um ato de amor, pois Deus ama quem dá com alegria (2Co 9.7). Essa contribuição é necessária para que a igreja se mantenha, os necessitados possam receber ajuda e o Evangelho avance. Como consequência, toda colaboração ajuda a levar a mensagem de Jesus a novas pessoas, enquanto aqueles que o fazem com liberalidade experimentam as provisões e as mais ricas bênçãos do Senhor em suas vidas.</p></section>
 <section aria-labelledby="l05-respostas" class="answers" data-source-pages="26"><h2 id="l05-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) A) décima<br/>B) sustento<br/>C) pobres; contribuíram<br/>D) mestres; Lei; hipócritas</p></section>
-</div>
-</article><article aria-label="Lição 6 — Amando a Família" aria-labelledby="l06-titulo-licao" class="lesson-page" data-lesson="6" data-source-pages="27-30" hidden="" id="licao-06">
-<header class="hero"><img alt="Capa oficial da Lição 6 — Amando a Família, extraída da página 28 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1050" src="assets/capa-licao-06.png" width="2040"/><div class="visually-hidden"><p>Lição 6 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l06-titulo-licao">AMANDO A FAMÍLIA</h1><p>Texto Bíblico: Sl 127.1; 1Tm 5.8</p></div></header>
-<div aria-label="Material complementar da Lição 6" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 6 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-06-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 06</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 6 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-6" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l06-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 6 — Amando a Família" aria-labelledby="l06-titulo-licao" class="lesson-page lesson" data-lesson="6" data-source-pages="27-30" id="licao-06">
+<header class="hero"><img alt="Capa oficial da Lição 6 — Amando a Família, extraída da página 28 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1050" src="assets/capa-licao-06.png" width="2040"/><div class="visually-hidden"><p>Lição 6 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l06-titulo-licao">AMANDO A FAMÍLIA</h1><p>Texto Bíblico: Sl 127.1; 1Tm 5.8</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 6" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 6 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-06-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 06</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 6 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-6" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l06-texto-original">
 <section aria-labelledby="l06-comecando" class="guide" data-source-pages="27"><h2 id="l06-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que a criação da família, é um projeto de Deus.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Sl 127.1, 1Tm 5.8</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Disponha os alunos em círculo, distribua papel e lápis e peça a cada um deles que divida a folha em duas colunas: “A família que eu tenho” e “A família que eu gostaria de ter”. Eles devem escrever, em cada coluna, as características da sua família real e as características da família que imaginam ser a ideal. Forme alguns grupos para que eles discutam os seguintes pontos: minha família é exatamente como eu gostaria que ela fosse? Existe alguma característica em comum entre as famílias dos componentes do grupo? O que cada um pensa sobre a família ideal? Por fim, cada grupo deve apresentar suas conclusões para o restante da turma.</p>
 <h3>INTRODUÇÃO</h3><p>De acordo com os princípios de Deus, a família é formada por um homem e uma mulher, unidos pelo casamento e pelos filhos vindos dessa união. A família foi estabelecida pelo Criador para que nela tivéssemos amor, cuidado e crescimento. Os laços familiares, quando bem cuidados, contribuem para uma sociedade mais equilibrada e justa, uma vez que geram cidadãos conscientes do seu papel social. Com o passar dos tempos, a família tem sofrido muitos ataques do inimigo que através da sociedade por ele corrompida, anseia destruir o propósito de Deus na vida de cada um. Com isso, as famílias têm assumido novos formatos, bem diferentes daquele projetado pelo Pai.</p>
@@ -514,11 +645,11 @@
 <p>Se você não tem pai ou mãe, com certeza deve sentir essa ausência. Mas, nunca se esqueça de que você é filho do Todo-Poderoso!</p></section>
 <section class="section" data-source-pages="30"><h2 class="section-heading">CONCLUINDO</h2><p>A família é o projeto mais perfeito de Deus e um presente valioso para a sua vida. Construir o lar sobre a rocha significa colocar o Senhor em primeiro lugar em cada decisão, atitude e conversa. Quando escolhemos honrar a Deus na juventude, a nossa casa floresce e amadurece de forma saudável. Vocês desempenham um papel fundamental na união do lar hoje. Protejam e valorizem sua família com seriedade, pois ela foi feita para durar para sempre.</p></section>
 <section aria-labelledby="l06-respostas" class="answers" data-source-pages="30"><h2 id="l06-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) B - A<br/>2) Sugestão de resposta: ajudar nas tarefas domésticas, ser pacífico, conversar com os pais, ler e praticar a Palavra de Deus, respeitar os irmãos e etc.</p></section>
-</div>
-</article><article aria-label="Lição 7 — Preparando-se para o Futuro" aria-labelledby="l07-titulo-licao" class="lesson-page" data-lesson="7" data-source-pages="31-34" hidden="" id="licao-07">
-<header class="hero"><img alt="Capa oficial da Lição 7 — Preparando-se para o Futuro, extraída da página 32 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1045" src="assets/capa-licao-07.png" width="2000"/><div class="visually-hidden"><p>Lição 7 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l07-titulo-licao">PREPARANDO-SE PARA O FUTURO</h1><p>Texto Bíblico: Pv 1.7; 2.6,11,12; 3.13-15</p></div></header>
-<div aria-label="Material complementar da Lição 7" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 7 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-07-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 07</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 7 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-7" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l07-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 7 — Preparando-se para o Futuro" aria-labelledby="l07-titulo-licao" class="lesson-page lesson" data-lesson="7" data-source-pages="31-34" id="licao-07">
+<header class="hero"><img alt="Capa oficial da Lição 7 — Preparando-se para o Futuro, extraída da página 32 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1045" src="assets/capa-licao-07.png" width="2000"/><div class="visually-hidden"><p>Lição 7 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l07-titulo-licao">PREPARANDO-SE PARA O FUTURO</h1><p>Texto Bíblico: Pv 1.7; 2.6,11,12; 3.13-15</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 7" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 7 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-07-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 07</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 7 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-7" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l07-texto-original">
 <section aria-labelledby="l07-comecando" class="guide" data-source-pages="31"><h2 id="l07-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender o propósito da formação escolar para o sucesso profissional.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Pv 1.7; 2.6,11,12; 3.13-15</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Separe ilustrações de profissões e objetos, como: enfermeiro, médico, engenheiro, professor, relógio, computador, livro, celular, lápis e etc. As ilustrações devem ter relação com a vida escolar, com as profissões. Mostre uma ilustração de cada vez, e pergunte aos alunos a qual profissional se destina. Peça que gravem a sequência em que as ilustrações estão sendo mostradas. Após esse momento, pergunte qual foi a primeira, a quarta ou a sétima ilustração apresentada. Essa atividade ajuda a manter a atenção e alegria da turma. Por fim, converse sobre a importância dos estudos na formação profissional.</p>
 <h3>INTRODUÇÃO</h3><p>Um bom aluno não precisa perder noites de sono nem abrir mãos de seus momentos de lazer. Pelo contrário, tanto o sono quanto o lazer são importantes para manter a boa disposição para os estudos, conforme apontam algumas pesquisas. Como fazer, então, para ter um bom rendimento escolar? Basta criar um planejamento com todas as atividades diárias, onde o adolescente deve incluir uma rotina de estudos.</p>
@@ -543,11 +674,11 @@
 <p>Ressalte que a vida escolar não é apenas uma obrigação, ela faz parte de algo maior: o plano de Deus para vida pessoal, profissional e ministerial de cada aluno.</p></section>
 <section class="section" data-source-pages="34"><h2 class="section-heading">CONCLUINDO</h2><p>Prepare-se para o futuro com excelência. Aproveite as oportunidades de aprender e crescer intelectualmente. Mas, guarde sempre um lugar central para Jesus em sua rotina. É essa busca constante por Ele que nos capacita a cumprir nossa verdadeira missão: ser sal e luz do mundo onde quer que a gente vá.</p></section>
 <section aria-labelledby="l07-respostas" class="answers" data-source-pages="34"><h2 id="l07-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) menino/sabedoria/ graça<br/>2) perseverança, confiança em si mesmo e fé em Deus.</p></section>
-</div>
-</article><article aria-label="Lição 8 — Fazendo a Obra de Deus" aria-labelledby="l08-titulo-licao" class="lesson-page" data-lesson="8" data-source-pages="35-38" hidden="" id="licao-08">
-<header class="hero"><img alt="Capa oficial da Lição 8 — Fazendo a Obra de Deus, extraída da página 36 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1132" src="assets/capa-licao-08.png" width="2080"/><div class="visually-hidden"><p>Lição 8 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l08-titulo-licao">FAZENDO A OBRA DE DEUS</h1><p>Texto Bíblico: Mt 9.37,38; 1Co 15.58</p></div></header>
-<div aria-label="Material complementar da Lição 8" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 8 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-08-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 08</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 8 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-8" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l08-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 8 — Fazendo a Obra de Deus" aria-labelledby="l08-titulo-licao" class="lesson-page lesson" data-lesson="8" data-source-pages="35-38" id="licao-08">
+<header class="hero"><img alt="Capa oficial da Lição 8 — Fazendo a Obra de Deus, extraída da página 36 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1132" src="assets/capa-licao-08.png" width="2080"/><div class="visually-hidden"><p>Lição 8 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l08-titulo-licao">FAZENDO A OBRA DE DEUS</h1><p>Texto Bíblico: Mt 9.37,38; 1Co 15.58</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 8" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 8 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-08-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 08</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 8 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-8" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l08-texto-original">
 <section aria-labelledby="l08-comecando" class="guide" data-source-pages="35"><h2 id="l08-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que a Obra de Deus faz parte dos propósitos da vida cristã.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Mt 9.37,38; 1Co 15.58</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Providencie três dicionários.</p><p>No quadro, escreva o versículo: “A ti também, Senhor, pertence a misericórdia; pois retribuirás a cada um segundo a sua obra”, Sl 62.12. Divida a turma em três grupos. Entregue um dicionário para cada um deles, para que pesquisem e debatam sobre o significado das seguintes palavras: “misericórdia”, “retribuição” e “obra”. Por fim, cada grupo deverá explicar, para o restante da turma, o significado da palavra que pesquisou e o que entenderam do versículo citado.</p>
 <h3>INTRODUÇÃO</h3><p>O Senhor se alegra, quando Seus servos se envolvem na Sua Obra com espontaneidade (Js 24.15,21,24). Aqueles que se disponibilizam para trabalhar em prol do Reino deve ter bom ânimo e ser perseverante, porque, como Jesus disse: “Ninguém que lança mão do arado e olha para trás é apto para o Reino de Deus”, Lc 9.62. Essa afirmação de Jesus demonstra bem a seriedade do serviço cristão, pois Deus não tem prazer em quem volta atrás nas suas obrigações ou abre mão da sua fé (Hb 10.38).</p>
@@ -576,11 +707,11 @@
 <p>Cada cristão deve zelar pelos Dons e talentos que recebeu, pois de tudo prestaremos contas a Deus (Mt 25.14-30).</p></section>
 <section class="section" data-source-pages="38"><h2 class="section-heading">CONCLUINDO</h2><p>Agora que você aprendeu um pouco mais sobre a Obra de Deus e da importância de descobrir e disponibilizar seus Dons e talentos para o Reino, peça a Deus que confirme em seu coração o que Ele espera de você. Esteja disponível para o serviço que lhe for proposto, como bem orientou o Apóstolo Paulo: “Sede firmes e constantes, sempre abundantes na obra do Senhor, sabendo que o vosso trabalho não é vão no Senhor”, 1Co 15.58.</p></section>
 <section aria-labelledby="l08-respostas" class="answers" data-source-pages="38"><h2 id="l08-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><figure class="source-puzzle" data-original-page="38"><img alt="Gabarito original do caça-palavras da Lição 8, página 38" src="assets/gabarito-caca-palavras-licao-08.png"/></figure><p>2) Dom/ multiforme</p></section>
-</div>
-</article><article aria-label="Lição 9 — Compreendendo o Propósito do Namoro" aria-labelledby="l09-titulo-licao" class="lesson-page" data-lesson="9" data-source-pages="39-42" hidden="" id="licao-09">
-<header class="hero"><img alt="Capa oficial da Lição 9 — Compreendendo o Propósito do Namoro, extraída da página 40 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1056" src="assets/capa-licao-09.png" width="1992"/><div class="visually-hidden"><p>Lição 9 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l09-titulo-licao">COMPREENDENDO O PROPÓSITO DO NAMORO</h1><p>Texto Bíblico: Eclesiastes 3.1-8</p></div></header>
-<div aria-label="Material complementar da Lição 9" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 9 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-09-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 09</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 9 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-9" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l09-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 9 — Compreendendo o Propósito do Namoro" aria-labelledby="l09-titulo-licao" class="lesson-page lesson" data-lesson="9" data-source-pages="39-42" id="licao-09">
+<header class="hero"><img alt="Capa oficial da Lição 9 — Compreendendo o Propósito do Namoro, extraída da página 40 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1056" src="assets/capa-licao-09.png" width="1992"/><div class="visually-hidden"><p>Lição 9 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l09-titulo-licao">COMPREENDENDO O PROPÓSITO DO NAMORO</h1><p>Texto Bíblico: Eclesiastes 3.1-8</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 9" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 9 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-09-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 09</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 9 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-9" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l09-texto-original">
 <section aria-labelledby="l09-comecando" class="guide" data-source-pages="39"><h2 id="l09-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que para tudo há um propósito, inclusive para o namoro.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Eclesiastes 3.1-8</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Divida a classe em dois grupos: um a favor e outro contra o namoro na adolescência. Incentive o debate entre os grupos, que deve ser mediado por você, professor. O objetivo é fazer com que os adolescentes reflitam sobre essa temática à luz das Escrituras. Procure inserir tópicos, como: as responsabilidades do namoro, o envolvimento das famílias, o comprometimento dos estudos, e outros que você julgue pertinentes.</p>
 <h3>INTRODUÇÃO</h3><p>A adolescência é um período marcado por novas descobertas e novos interesses, além de ser uma fase cheia de transformações físicas, emocionais e sociais. Durante essa fase os adolescentes estão sujeitos a paixões; por isso, devemos incentivá-los a buscar o propósito de Deus em cada etapa de sua vida.</p>
@@ -605,11 +736,11 @@
 <p>Quem pula etapas no seu desenvolvimento corre o risco de passar o resto da vida se lamentando pelo que não viveu ou pelo que viveu no momento errado.</p></section>
 <section class="section" data-source-pages="42"><h2 class="section-heading">CONCLUINDO</h2><p>Namoro com propósito não se trata somente de regras rígidas, mas de um relacionamento intencional no tempo adequado, atrelado à vontade de Deus. A Bíblia está repleta de conselhos maravilhosos do Senhor para o seu coração. Sendo assim, medite nela dia e noite, para que você se comporte com prudência (Js 1.8), para ter discernimento em todas as situações (1Co 2.15), buscando em Deus, propósito e crescimento para sua vida emocional.</p></section>
 <section aria-labelledby="l09-respostas" class="answers" data-source-pages="42"><h2 id="l09-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) ( F )<br/>( V )<br/>( V )<br/>( V )<br/>( V )</p></section>
-</div>
-</article><article aria-label="Lição 10 — Perdão, um Propósito Libertador" aria-labelledby="l10-titulo-licao" class="lesson-page" data-lesson="10" data-source-pages="43-46" hidden="" id="licao-10">
-<header class="hero"><img alt="Capa oficial da Lição 10 — Perdão, um Propósito Libertador, extraída da página 44 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1084" src="assets/capa-licao-10.png" width="1960"/><div class="visually-hidden"><p>Lição 10 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l10-titulo-licao">PERDÃO, UM PROPÓSITO LIBERTADOR</h1><p>Texto Bíblico: Mt 18.23-35; Tg 2.13</p></div></header>
-<div aria-label="Material complementar da Lição 10" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 10 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-10-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 10</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 10 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-10" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l10-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 10 — Perdão, um Propósito Libertador" aria-labelledby="l10-titulo-licao" class="lesson-page lesson" data-lesson="10" data-source-pages="43-46" id="licao-10">
+<header class="hero"><img alt="Capa oficial da Lição 10 — Perdão, um Propósito Libertador, extraída da página 44 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1084" src="assets/capa-licao-10.png" width="1960"/><div class="visually-hidden"><p>Lição 10 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l10-titulo-licao">PERDÃO, UM PROPÓSITO LIBERTADOR</h1><p>Texto Bíblico: Mt 18.23-35; Tg 2.13</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 10" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 10 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-10-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 10</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 10 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-10" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l10-texto-original">
 <section aria-labelledby="l10-comecando" class="guide" data-source-pages="43"><h2 id="l10-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que o perdão é um propósito divino que traz liberdade para o pecador.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Mt 18.23-35; Tg 2.13</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Mostre uma chave para os alunos e pergunte para que ela serve. Normalmente, eles respondem que é para abrir ou fechar algo. Explique que o perdão pode ser comparado a uma chave, que “abre” portas, pois reata amizades, alivia a culpa por atitudes erradas que cometemos, demonstra a misericórdia de Deus, restaura a alegria perdida e etc. Por outro lado, a falta de perdão pode manter algumas portas “fechadas”, como: a amargura, o ressentimento, as doenças emocionais e a mente confusa. Para finalizar, leia Mc 11.25,26 com a turma.</p>
 <h3>INTRODUÇÃO</h3><p>Todos nós pecamos, por isso, necessitamos do perdão de Deus (Rm 3.23). Contudo, ao aceitar Jesus como Salvador e Senhor, a nossa dívida é perdoada (Ef 4.32). Por gratidão a Deus pelo perdão que dEle recebemos, por Graça, passamos a praticar perdão mútuo (Cl 3.13) como Mandamento divino (Mt 18.21,22); Mt 6.14,15; Mc 11.25).</p>
@@ -633,11 +764,11 @@
 <p>Deus perdoa quem pede perdão, a Ele e ao próximo, com sinceridade. Se a outra parte não aceita e não perdoa, isso será entre ela e Deus e não envolve mais aquele que se arrependeu.</p></section>
 <section class="section" data-source-pages="46"><h2 class="section-heading">CONCLUINDO</h2><p>Viver com o espírito abatido e a alegria roubada é a consequência direta de reter o perdão por ofensas que, perto do Amor de Deus, são pequenas. Provérbios 17.22, diz: “a amargura faz secar os ossos”, mas o perdão libera o coração para que a Obra de Deus, em nós, avance em paz. Decidir perdoar é, portanto, o único caminho para restaurar a saúde da alma, expulsar a angústia do coração e voltar a caminhar na plenitude da felicidade, vivendo livre de mágoas, em comunhão com o Pai e com o próximo.</p></section>
 <section aria-labelledby="l10-respostas" class="answers" data-source-pages="46"><h2 id="l10-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) A) joga nossos pecados no fundo do mar<br/>B) para a saúde e para receber o perdão de Deus<br/>C) mas não perdoou seu servo<br/>D) sempre</p></section>
-</div>
-</article><article aria-label="Lição 11 — Crescendo em Meio à Dor" aria-labelledby="l11-titulo-licao" class="lesson-page" data-lesson="11" data-source-pages="47-50" hidden="" id="licao-11">
-<header class="hero"><img alt="Capa oficial da Lição 11 — Crescendo em Meio à Dor, extraída da página 48 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1053" src="assets/capa-licao-11.png" width="2064"/><div class="visually-hidden"><p>Lição 11 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l11-titulo-licao">CRESCENDO EM MEIO À DOR</h1><p>Texto Bíblico: Rm 5.1-5; Co 10.13</p></div></header>
-<div aria-label="Material complementar da Lição 11" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 11 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-11-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 11</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 11 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-11" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l11-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 11 — Crescendo em Meio à Dor" aria-labelledby="l11-titulo-licao" class="lesson-page lesson" data-lesson="11" data-source-pages="47-50" id="licao-11">
+<header class="hero"><img alt="Capa oficial da Lição 11 — Crescendo em Meio à Dor, extraída da página 48 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1053" src="assets/capa-licao-11.png" width="2064"/><div class="visually-hidden"><p>Lição 11 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l11-titulo-licao">CRESCENDO EM MEIO À DOR</h1><p>Texto Bíblico: Rm 5.1-5; Co 10.13</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 11" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 11 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-11-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 11</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 11 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-11" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l11-texto-original">
 <section aria-labelledby="l11-comecando" class="guide" data-source-pages="47"><h2 id="l11-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que o sofrimento pode trazer crescimento pessoal e espiritual.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Rm 5.1-5; Co 10.13</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Distribua folhas de papel ofício para a turma. Peça aos alunos que dividam a folha em quatro partes. No primeiro quadro, devem desenhar um ambiente árido, como o deserto; no segundo, devem desenhar um ambiente inundado, como um manguezal; no terceiro, um lugar selvagem, como uma mata ou floresta; no quarto quadro, um campo verdejante. Explique que a caminhada cristã é assim, cheia de experiências diferentes. Às vezes, parece que estamos sozinhos, no deserto. Em outros momentos, parece que estamos afundando em um pântano ou que estamos cercados por feras. Apesar disso, Deus nos leva a um pasto verdejante, onde é possível descansar e desfrutar do Seu Amor até que a tribulação passe.</p>
 <h3>INTRODUÇÃO</h3><p>Os momentos de sofrimento são uma realidade que atinge todos os seres humanos, sejam eles crentes ou não. Os tempos de tribulação são ricos em ensinamentos que levam à maturidade e ao crescimento pessoal e espiritual. A Bíblia menciona vários relatos de pessoas que passaram por momentos de muita angústia, mas que, mesmo assim, não renunciaram à fé ou abandonaram a certeza de que Deus é o nosso refúgio e fortaleza em tempos de angústia (Sl 46.1).</p>
@@ -664,11 +795,11 @@
 <p>Leia Tiago 1.2,3 com os alunos, e conversem um pouco sobre como manter a alegria em tempos difíceis.</p></section>
 <section class="section" data-source-pages="50"><h2 class="section-heading">CONCLUINDO</h2><p>Todo sofrimento é passageiro, mas traz grandes lições.</p><p>Para crescer em meio a dor, é necessário entender o quanto devemos depender do Senhor e nos posicionar em Sua gloriosa presença, pois dEle vem a força que precisamos (Is 40.31). Toda dor tem tempo certo para acabar, e um propósito a cumprir. Em Cristo, temos a certeza de que em tudo somos mais que vencedores (Rm 8.37). E mais: “as aflições deste tempo presente não são para comparar com a glória que em nós há de ser revelada”, Rm 8.18. Aleluia!</p></section>
 <section aria-labelledby="l11-respostas" class="answers" data-source-pages="50"><h2 id="l11-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) E, C, C, E, E.</p></section>
-</div>
-</article><article aria-label="Lição 12 — Adorando e Louvando a Deus" aria-labelledby="l12-titulo-licao" class="lesson-page" data-lesson="12" data-source-pages="51-54" hidden="" id="licao-12">
-<header class="hero"><img alt="Capa oficial da Lição 12 — Adorando e Louvando a Deus, extraída da página 52 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1076" src="assets/capa-licao-12.png" width="2024"/><div class="visually-hidden"><p>Lição 12 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l12-titulo-licao">ADORANDO E LOUVANDO A DEUS</h1><p>Texto Bíblico: Ef 4.11-16</p></div></header>
-<div aria-label="Material complementar da Lição 12" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 12 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-12-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 12</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 12 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-12" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l12-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 12 — Adorando e Louvando a Deus" aria-labelledby="l12-titulo-licao" class="lesson-page lesson" data-lesson="12" data-source-pages="51-54" id="licao-12">
+<header class="hero"><img alt="Capa oficial da Lição 12 — Adorando e Louvando a Deus, extraída da página 52 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1076" src="assets/capa-licao-12.png" width="2024"/><div class="visually-hidden"><p>Lição 12 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l12-titulo-licao">ADORANDO E LOUVANDO A DEUS</h1><p>Texto Bíblico: Ef 4.11-16</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 12" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 12 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-12-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 12</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 12 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-12" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l12-texto-original">
 <section aria-labelledby="l12-comecando" class="guide" data-source-pages="51"><h2 id="l12-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que o propósito do louvor é bendizer a Deus, e o propósito da adoração é prestar reverência a Ele.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Ef 4.11-16</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Divida o quadro em duas partes: uma parte para o louvor e outra para a adoração.</p><p>Na coluna do louvor, escreva as características: é centrado no reconhecimento das ações de Deus; expressa exaltação e glorificação ao nome de Deus; podemos louvar a Deus pela Salvação, pelos livramentos e pela vida. Escreva também que louvar é enaltecer os feitos de Deus. Depois escreva, na coluna da adoração as características: é o reconhecimento do que Deus é: Sábio, Amor, Santo, Misericordioso. Finalize afirmando que adorar é exaltar os atributos divinos. Após explicar e definir cada termo, divida a turma em dois grupos.</p><p>Entregue a cada grupo, papel e caneta. O primeiro grupo deve listar os motivos pelos quais devemos louvar ao Senhor, enquanto o segundo grupo apresentará uma lista dos atributos divinos. Ao terminar a tarefa, cada grupo exibirá sua lista para o restante da turma. Por fim, um grupo fará uma oração de louvor a Deus e o outro, uma oração de adoração a Ele.</p>
 <h3>INTRODUÇÃO</h3><p>É comum que as igrejas cristãs realizem um período de louvor, com hinos e cânticos a Deus, antes da pregação da Palavra. Por isso, muitas pessoas pensam que louvar é apenas cantar. Porém, nesta lição, vamos estudar o que a Bíblia ensina sobre o verdadeiro louvor, que agrada a Deus, e sobre a adoração que Lhe é devida, pois Deus procura por verdadeiros adoradores, que O adorem em espírito e em verdade (Jo 4.23).</p>
@@ -688,11 +819,11 @@
 <p>A adoração não se pratica apenas com músicas, mas através de um modo de vida em obediência e devoção a Deus.</p></section>
 <section class="section" data-source-pages="54"><h2 class="section-heading">CONCLUINDO</h2><p>Os olhos do Senhor estão em busca de fiéis adoradores, os quais O amem de coração. Aos verdadeiros adoradores, Deus deseja conceder experiências profundas e pessoais com Ele, talvez semelhantes às vividas por Moisés, Elias, Daniel e a tantos outros personagens da Bíblia. Faça da adoração um estilo diário de vida. Envolva-se com Deus por meio de Sua Palavra e da prática da oração. Permita que seu coração seja preenchido pelo Espírito Santo, a fim de que Ele molde o caráter adorador de Cristo em você!</p></section>
 <section aria-labelledby="l12-respostas" class="answers" data-source-pages="54"><h2 id="l12-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1)<br/>A) adoração/coração<br/>B) adorar/reverencia/é<br/>C) alegria/comunhão<br/>D) espírito/verdade</p><p>2) O louvor e a adoração preenchem as necessidades humanas e alegram a Deus.</p></section>
-</div>
-</article><article aria-label="Lição 13 — Honrando a Deus em Tudo" aria-labelledby="l13-titulo-licao" class="lesson-page" data-lesson="13" data-source-pages="55-58" hidden="" id="licao-13">
-<header class="hero"><img alt="Capa oficial da Lição 13 — Honrando a Deus em Tudo, extraída da página 56 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1064" src="assets/capa-licao-13.png" width="2032"/><div class="visually-hidden"><p>Lição 13 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l13-titulo-licao">HONRANDO A DEUS EM TUDO</h1><p>Texto Bíblico: Jr 3.17; Jo 14.15</p></div></header>
-<div aria-label="Material complementar da Lição 13" class="support-access"><a aria-label="Abrir o Apoio Pedagógico da Lição 13 em uma nova aba" class="support-link" href="apoios/apoio-pedagogico-licao-13-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 13</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 13 em uma nova aba" class="prompts-link" href="prompts-pre-adolescentes-4t-2026.html#licao-13" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div>
-<div class="body" id="l13-texto-original">
+</div></div>
+
+
+</article><article aria-label="Lição 13 — Honrando a Deus em Tudo" aria-labelledby="l13-titulo-licao" class="lesson-page lesson" data-lesson="13" data-source-pages="55-58" id="licao-13">
+<header class="hero"><img alt="Capa oficial da Lição 13 — Honrando a Deus em Tudo, extraída da página 56 da Revista do Professor Adolescer+." class="official-cover" decoding="async" height="1064" src="assets/capa-licao-13.png" width="2032"/><div class="visually-hidden"><p>Lição 13 · Revista do Professor</p><p>Adolescer+ · Adolescendo com Propósito</p><h1 id="l13-titulo-licao">HONRANDO A DEUS EM TUDO</h1><p>Texto Bíblico: Jr 3.17; Jo 14.15</p></div></header><div class="shell"><div aria-label="Material complementar da Lição 13" class="support-access lesson-actions"><span class="lesson-actions-label">Ações desta lição</span><a aria-label="Abrir o Apoio Pedagógico da Lição 13 em uma nova aba" class="support-link lesson-action support" href="apoios/apoio-pedagogico-licao-13-pre-adolescentes.html" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">📖</span> Abrir Apoio Pedagógico <span class="support-lesson">· Lição 13</span></a><a aria-label="Abrir os Prompts EBD Fiel da Lição 13 em uma nova aba" class="prompts-link lesson-action prompts" href="prompts-pre-adolescentes-4t-2026.html#licao-13" rel="noopener noreferrer" target="_blank">✨ Prompts EBD Fiel</a></div><div class="body" id="l13-texto-original">
 <section aria-labelledby="l13-comecando" class="guide" data-source-pages="55"><h2 id="l13-comecando">Começando a Aula</h2><dl><div><dt>OBJETIVO</dt><dd>Entender que honrar a Deus é viver segundo os Mandamentos bíblicos.</dd></div><div><dt>TEXTO(S) BÍBLICO(S)</dt><dd>Jr 3.17; Jo 14.15</dd></div></dl>
 <h3>PREPARANDO A LIÇÃO</h3><p>Prenda uma caixa de bombons no fundo de uma outra caixa, que deve ser embrulhada com papel de presente. Providencie uma caixa e bombons e na parte de cima da caixa escreva: “Coma o chocolate!” Durante a aula, peça aos alunos que formem um círculo e explique que dentro dessa caixa há um presente especial, mas que traz uma ordem que deve ser cumprida por quem estiver com a caixa quando você disser para parar. Toque um louvor, inicie a dinâmica e crie um pouco de suspense: “Você está preparado?” “Vai ter que obedecer, hein?” “Cumpra a ordem que vai receber!” Pare a música e pergunte ao adolescente que está com a caixa se ele aceita o desafio de abri-la ou se prefere passá-la adiante. Repita a dinâmica até que um deles aceite o desafio ou até você declarar que é a rodada final, sem a opção de passar a caixa adiante. Por fim, quem abrir a caixa vai se deparar com a ordem para comer o chocolate. Compare a brincadeira com a vida cristã: mesmo quando sentimos receio, medo ou insegurança diante dos desafios, obedecer às ordens de Deus é sempre gratificante e recompensador.</p>
 <h3>INTRODUÇÃO</h3><p>Leia com os alunos os textos bíblicos da lição. Explique que honrar, significa: exaltar, glorificar e elevar às alturas. Por isso, obedecer aos mandamentos bíblicos é honrar o Nome de Deus. Como está escrito em Jeremias 3.17, para honrar o nome do Senhor é necessário renunciar os desejos do próprio coração.</p>
@@ -713,45 +844,43 @@
 <p>Ressalte para a turma que a gratidão e a generosidade não são ações isoladas, mas sim um estilo de vida diário que honra e glorifica a Deus em tudo.</p></section>
 <section class="section" data-source-pages="58"><h2 class="section-heading">CONCLUINDO</h2><p>Honrar a Deus significa, reconhecer a Sua Soberania acima de todas as coisas e demonstrar reverência com atitudes sinceras diariamente. Reconhecer que tudo que somos e temos vem dEle, dedicar a nossa vida a Ele, seguir Seus Mandamentos e oferecer o nosso tempo, talentos e recursos para a expansão do Reino, são atitudes dos que são salvos por Ele.</p></section>
 <section aria-labelledby="l13-respostas" class="answers" data-source-pages="58"><h2 id="l13-respostas">Respostas aos Exercícios da Revista do Aluno:</h2><p>1) Resposta livre.</p><p><img alt="" aria-hidden="true" class="source-warning-original" height="55" src="assets/aviso-original-professor-licao-13.png" width="49"/>Professor, incentive a participação de todos. Auxilie os que tiverem dificuldade, lembrando os benefícios de Deus: o ar que respiramos, o alimento diário, a escola, a família, entre outros.</p></section>
-</div>
-</article></main>
-</div>
-<script>
-(()=>{
-  const input=document.getElementById('search'),status=document.getElementById('search-status'),results=document.getElementById('search-results');
-  const nav=[...document.querySelectorAll('#lesson-index a[data-lesson]')];
-  const pages=[...document.querySelectorAll('.lesson-page')];
-  let active=1;
-  const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('pt-BR');
-  function selectLesson(n,scroll=true){
-    if(!(n>=1&&n<=pages.length))return;
-    active=n;
-    for(const page of pages){page.hidden=Number(page.dataset.lesson)!==n;}
-    for(const a of nav){const selected=Number(a.dataset.lesson)===n;a.classList.toggle('active',selected);if(selected)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}
-    if(scroll)document.getElementById('licao-'+String(n).padStart(2,'0')).scrollIntoView({behavior:'smooth',block:'start'});
-    try{history.replaceState(null,'','#licao-'+String(n).padStart(2,'0'));}catch(_){}
+</div></div>
+
+
+</article></main></div><a aria-label="Voltar ao topo" class="top" href="#topo">↑</a><script>
+(function(){
+  const menu=document.querySelector('.menu');
+  const side=document.querySelector('.sidebar');
+  const overlay=document.querySelector('.overlay');
+  if(menu&&side&&overlay){
+    menu.addEventListener('click',()=>{
+      const open=side.classList.toggle('open');
+      overlay.classList.toggle('show',open);
+      menu.setAttribute('aria-expanded',open?'true':'false');
+    });
+    overlay.addEventListener('click',()=>{
+      side.classList.remove('open');overlay.classList.remove('show');menu.setAttribute('aria-expanded','false');
+    });
+    document.querySelectorAll('.sidebar a').forEach(a=>a.addEventListener('click',()=>{
+      side.classList.remove('open');overlay.classList.remove('show');menu.setAttribute('aria-expanded','false');
+    }));
   }
-  nav.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();selectLesson(Number(a.dataset.lesson));}));
-  function clearMarks(){document.querySelectorAll('mark[data-search-hit]').forEach(mark=>mark.replaceWith(document.createTextNode(mark.textContent)));for(const page of pages)page.normalize();results.textContent='';}
-  function search(){
-    clearMarks();const q=norm(input.value.trim());
-    if(!q){status.textContent='Digite uma palavra, expressão ou referência bíblica para pesquisar nas 13 lições.';status.classList.remove('no-results');return;}
-    let total=0,firstLesson=0;
-    for(const page of pages){
-      const walker=document.createTreeWalker(page,NodeFilter.SHOW_TEXT,{acceptNode(node){if(!node.parentElement||node.parentElement.closest('script,style,.editorial'))return NodeFilter.FILTER_REJECT;return node.textContent.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;}});
-      const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);let n=0;
-      for(const node of nodes){const original=node.nodeValue,folded=norm(original);let at=0,found=folded.indexOf(q,at);if(found<0)continue;const fragment=document.createDocumentFragment();while(found>=0){fragment.append(document.createTextNode(original.slice(at,found)));const mark=document.createElement('mark');mark.dataset.searchHit='';mark.textContent=original.slice(found,found+q.length);fragment.append(mark);n++;at=found+q.length;found=folded.indexOf(q,at);}fragment.append(document.createTextNode(original.slice(at)));node.replaceWith(fragment);}
-      if(n){const lesson=Number(page.dataset.lesson);if(!firstLesson)firstLesson=lesson;total+=n;const b=document.createElement('button');b.type='button';b.textContent=`Lição ${lesson}: ${n} ocorrência(s)`;b.addEventListener('click',()=>{selectLesson(lesson);page.querySelector('mark[data-search-hit]')?.scrollIntoView({behavior:'smooth',block:'center'});});results.append(b);}
+  const input=document.querySelector('.sidebar .search input');
+  if(input){
+    input.addEventListener('input',()=>{
+      const q=input.value.toLowerCase().trim();
+      document.querySelectorAll('.lesson-nav a').forEach(a=>{
+        a.style.display=!q||a.textContent.toLowerCase().includes(q)?'grid':'none';
+      });
+    });
+  }
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){
+      document.querySelectorAll('.lesson-nav a').forEach(a=>a.classList.remove('active'));
+      document.querySelector('.lesson-nav [data-nav="'+e.target.id+'"]')?.classList.add('active');
     }
-    status.textContent=total?`${total} ocorrência(s) em ${results.children.length} lição(ões). Selecione um resultado para navegar.`:'Nenhuma ocorrência encontrada nas 13 lições.';
-    status.classList.toggle('no-results',!total);
-    if(firstLesson){selectLesson(firstLesson,false);pages[firstLesson-1].querySelector('mark[data-search-hit]')?.scrollIntoView({behavior:'smooth',block:'center'});}
-  }
-  document.getElementById('search-form').addEventListener('submit',e=>{e.preventDefault();search();});
-  document.getElementById('clear-search').addEventListener('click',()=>{input.value='';clearMarks();status.textContent='Pesquisa limpa.';status.classList.remove('no-results');input.focus();});
-  document.getElementById('print').addEventListener('click',()=>window.print());
-  const fromHash=Number((location.hash.match(/licao-(\d+)/)||[])[1]);if(fromHash>1&&fromHash<=13)selectLesson(fromHash,false);
+  }),{rootMargin:'-25% 0px -62% 0px'});
+  document.querySelectorAll('article.lesson-page').forEach(x=>obs.observe(x));
 })();
-</script>
-</body>
+</script></body>
 </html>
